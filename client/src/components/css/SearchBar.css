@@ -1,0 +1,24 @@
+.search-field:focus-within {
+  border-color: var(--hairline);
+  background: var(--canvas);
+}
+
+.search-field input:focus-visible {
+  outline: 0;
+}
+
+@media (max-width: 440px) {
+  .search-field {
+    gap: 8px;
+    padding: 0 11px;
+  }
+
+  .search-field input {
+    font-size: 12px;
+  }
+
+  .search-submit {
+    width: 28px;
+    height: 28px;
+  }
+}

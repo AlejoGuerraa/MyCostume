@@ -70,10 +70,6 @@
     padding: 34px 0;
   }
 
-  .footer-brand-block {
-    grid-column: 1 / -1;
-  }
-
   .footer-description {
     max-width: 520px;
   }
@@ -83,10 +79,6 @@
   .footer-main {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 28px 18px;
-  }
-
-  .footer-brand-block {
-    grid-column: 1 / -1;
   }
 
   .footer-bottom {

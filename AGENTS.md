@@ -717,6 +717,15 @@ Before creating or modifying any frontend component, page, layout, or stylesheet
 3. Identify the applicable colors, typography, spacing, components, and layout conventions.
 4. Implement the requested changes consistently with those rules.
 
+### Responsive Design
+
+- All frontend pages and components must be fully responsive.
+- The application must work correctly on desktop, tablet, and mobile screen sizes.
+- Layouts, navigation, forms, cards, images, and interactive elements must adapt to different viewport sizes.
+- Avoid horizontal overflow, overlapping elements, clipped content, and unusable controls on smaller screens.
+- When modifying frontend code, preserve responsive behavior and verify the affected component at different viewport sizes.
+- Responsive design is a mandatory requirement for every new frontend implementation, not an optional improvement.
+
 ### Important Rules
 
 - Never ignore or override established design decisions without explicit authorization.

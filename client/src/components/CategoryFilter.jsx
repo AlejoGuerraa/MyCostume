@@ -1,31 +1,36 @@
 import './css/CategoryFilter.css'
 
-const categories = [
-  'All Items',
-  'Accessories',
-  'Pants',
-  'T-shirts',
-  'Shirts',
-  'Jackets',
-  'Coats',
-  'Footwear',
-  'Props',
-]
-
-function CategoryFilter() {
+function CategoryFilter({ categories, selectedCategoryId, onSelect }) {
   return (
     <nav className="category-nav" aria-label="Item categories">
       <ul className="category-list">
-        {categories.map((category, index) => (
-          <li key={category}>
-            <span
-              className={index === 0 ? 'category-chip is-selected' : 'category-chip'}
-              aria-current={index === 0 ? 'true' : undefined}
-            >
-              {category}
-            </span>
-          </li>
-        ))}
+        <li>
+          <button
+            className={`category-chip${selectedCategoryId === '' ? ' is-selected' : ''}`}
+            type="button"
+            aria-pressed={selectedCategoryId === ''}
+            onClick={() => onSelect('')}
+          >
+            All Items
+          </button>
+        </li>
+        {categories.map((category) => {
+          const categoryId = String(category.categoryId)
+          const isSelected = selectedCategoryId === categoryId
+
+          return (
+            <li key={category.categoryId}>
+              <button
+                className={`category-chip${isSelected ? ' is-selected' : ''}`}
+                type="button"
+                aria-pressed={isSelected}
+                onClick={() => onSelect(categoryId)}
+              >
+                {category.name}
+              </button>
+            </li>
+          )
+        })}
       </ul>
     </nav>
   )

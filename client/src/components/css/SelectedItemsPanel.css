@@ -1,0 +1,120 @@
+.selection-panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: min(360px, calc(100vw - 32px));
+  padding: 20px;
+  border: 1px solid var(--hairline-soft);
+  background: var(--canvas);
+}
+
+.selection-panel-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--hairline-soft);
+}
+
+.selection-eyebrow {
+  margin-bottom: 5px;
+  color: var(--mute);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+.selection-panel-heading h2 {
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.selection-close {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: var(--soft-cloud);
+  color: var(--ink);
+  font-size: 23px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.selection-status,
+.selection-message {
+  padding: 16px 0;
+  color: var(--charcoal);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.selection-status.is-error {
+  color: #d30005;
+}
+
+.selection-message {
+  color: var(--charcoal);
+}
+
+.selected-item-list {
+  max-height: 360px;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.selected-item-list li {
+  display: flex;
+  min-height: 62px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid var(--hairline-soft);
+}
+
+.selected-item-list li > div {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+}
+
+.selected-item-name {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.selected-item-category {
+  color: var(--mute);
+  font-size: 12px;
+}
+
+.selected-item-list button {
+  min-height: 36px;
+  flex: 0 0 auto;
+  padding: 7px 12px;
+  border: 1px solid var(--hairline);
+  border-radius: 9999px;
+  background: var(--canvas);
+  color: var(--ink);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 440px) {
+  .selection-panel {
+    position: fixed;
+    top: 120px;
+    right: var(--page-gutter);
+    width: min(360px, calc(100vw - var(--page-gutter) * 2));
+  }
+}

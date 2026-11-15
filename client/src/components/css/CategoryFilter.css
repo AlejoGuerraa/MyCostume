@@ -23,12 +23,22 @@
   font-size: 13px;
   font-weight: 500;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .category-chip.is-selected {
   border-color: var(--ink);
   background: var(--ink);
   color: #ffffff;
+}
+
+.category-chip:focus-visible,
+.selection-toggle:focus-visible,
+.search-submit:focus-visible,
+.item-toggle:focus-visible,
+.selection-panel button:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
 }
 
 @media (max-width: 600px) {
