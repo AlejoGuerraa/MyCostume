@@ -3,10 +3,11 @@ import { Link, useSearchParams } from 'react-router-dom'
 import CategoryFilter from '../components/CategoryFilter.jsx'
 import Footer from '../components/Footer.jsx'
 import Header from '../components/Header.jsx'
+import CharacterCard from '../components/CharacterCard.jsx'
 import ProductCard from '../components/ProductCard.jsx'
 import { useSelection } from '../context/useSelection.js'
 import { useCategories } from '../hooks/useCategories.js'
-import { searchItems } from '../services/catalogApi.js'
+import { searchCatalog } from '../services/catalogApi.js'
 import './css/SearchResultsPage.css'
 
 function SearchResultsPage() {
@@ -19,6 +20,7 @@ function SearchResultsPage() {
   const [searchResult, setSearchResult] = useState({
     key: null,
     items: [],
+    costumes: [],
     error: '',
   })
 
@@ -29,10 +31,10 @@ function SearchResultsPage() {
       return () => controller.abort()
     }
 
-    searchItems(query, { categoryId, signal: controller.signal })
-      .then((items) => {
+    searchCatalog(query, { categoryId, signal: controller.signal })
+      .then((results) => {
         if (!controller.signal.aborted) {
-          setSearchResult({ key: requestKey, items, error: '' })
+          setSearchResult({ key: requestKey, ...results, error: '' })
         }
       })
       .catch((requestError) => {
@@ -40,6 +42,7 @@ function SearchResultsPage() {
           setSearchResult({
             key: requestKey,
             items: [],
+            costumes: [],
             error: requestError.message,
           })
         }
@@ -50,6 +53,7 @@ function SearchResultsPage() {
 
   const hasCurrentResult = searchResult.key === requestKey
   const items = hasCurrentResult ? searchResult.items : []
+  const costumes = hasCurrentResult ? searchResult.costumes : []
   const error = hasCurrentResult ? searchResult.error : ''
   const loading = Boolean(query) && !hasCurrentResult
   function selectCategory(nextCategoryId) {
@@ -88,7 +92,8 @@ function SearchResultsPage() {
             </div>
             {!loading && !error && query && (
               <p className="search-result-count">
-                {items.length} {items.length === 1 ? 'MATCH' : 'MATCHES'}
+                {items.length + costumes.length}{' '}
+                {items.length + costumes.length === 1 ? 'MATCH' : 'MATCHES'}
               </p>
             )}
           </div>
@@ -119,22 +124,44 @@ function SearchResultsPage() {
               Enter a search term to find catalog items.
             </p>
           )}
-          {!loading && !error && query && items.length === 0 && (
+          {!loading && !error && query && items.length === 0 && costumes.length === 0 && (
             <p className="catalog-state" role="status">
-              No items matched this search. Try another name.
+              No items or characters matched this search. Try another name.
             </p>
           )}
           {!loading && !error && items.length > 0 && (
-            <div className="product-grid">
-              {items.map((item) => (
-                <ProductCard
-                  item={item}
-                  key={item.itemId}
-                  isSelectedForColor={isSelectedForColor}
-                  onToggle={toggleItem}
-                />
-              ))}
-            </div>
+            <section className="search-result-section" aria-labelledby="item-results-title">
+              <div className="search-result-section-heading">
+                <h2 id="item-results-title">Items</h2>
+                <span>{items.length}</span>
+              </div>
+              <div className="product-grid">
+                {items.map((item) => (
+                  <ProductCard
+                    item={item}
+                    key={item.itemId}
+                    isSelectedForColor={isSelectedForColor}
+                    onToggle={toggleItem}
+                  />
+                ))}
+              </div>
+            </section>
+          )}
+          {!loading && !error && costumes.length > 0 && (
+            <section
+              className="search-result-section"
+              aria-labelledby="character-results-title"
+            >
+              <div className="search-result-section-heading">
+                <h2 id="character-results-title">Characters</h2>
+                <span>{costumes.length}</span>
+              </div>
+              <div className="character-grid">
+                {costumes.map((character) => (
+                  <CharacterCard character={character} key={character.costumeId} />
+                ))}
+              </div>
+            </section>
           )}
         </section>
       </main>

@@ -2,7 +2,7 @@ import 'dotenv/config'
 import { readFile } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
 import { initializeDatabase, sequelize } from '../config/database.js'
-import { Category, CostumeItem, Item } from '../models/index.js'
+import { Category, Costume, CostumeItem, Item } from '../models/index.js'
 
 const catalogPath = fileURLToPath(new URL('../data/catalog.json', import.meta.url))
 const colorNames = new Set([
@@ -31,9 +31,34 @@ function getColorlessItemName(name) {
     .join(' ')
 }
 
+function normalizeCostumeName(name) {
+  if (typeof name !== 'string') {
+    return ''
+  }
+
+  const withoutSuffix = name
+    .trim()
+    .replace(/\s*\([^)]*\)\s*$/g, '')
+    .replace(/\b(?:generic|default)\b/gi, '')
+    .replace(/[^a-zA-Z0-9\s]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase()
+
+  return withoutSuffix
+}
+
 function validateCatalog(catalog) {
   if (!Array.isArray(catalog.categories) || !Array.isArray(catalog.items)) {
     throw new Error('Catalog categories and items must be arrays.')
+  }
+
+  if (!Array.isArray(catalog.costumes)) {
+    throw new Error('Catalog costumes must be an array.')
+  }
+
+  if (!Array.isArray(catalog.costume_items)) {
+    throw new Error('Catalog costume items must be an array.')
   }
 
   const categoryNames = new Set(catalog.categories)
@@ -65,6 +90,40 @@ function validateCatalog(catalog) {
     }
     itemKeys.add(itemKey)
   }
+
+  const costumeNames = new Map()
+  for (const costume of catalog.costumes) {
+    if (!costume || typeof costume.name !== 'string' || !costume.name.trim()) {
+      throw new Error('Every costume must contain a non-empty name.')
+    }
+
+    const normalizedName = costume.name.trim()
+    const key = normalizeCostumeName(normalizedName)
+    if (!key) {
+      throw new Error(`Invalid costume name "${normalizedName}".`)
+    }
+
+    if (costumeNames.has(key)) {
+      throw new Error(`Duplicate costume "${normalizedName}".`)
+    }
+    costumeNames.set(key, normalizedName)
+  }
+
+  const knownItemNames = new Set(catalog.items.map((item) => item.name))
+  for (const entry of catalog.costume_items) {
+    if (!entry || typeof entry.costume_name !== 'string' || typeof entry.item_name !== 'string') {
+      throw new Error('Every costume-item relationship must include both costume_name and item_name.')
+    }
+
+    const key = normalizeCostumeName(entry.costume_name)
+    if (!costumeNames.has(key)) {
+      throw new Error(`Unknown costume "${entry.costume_name}" in costume item relationship.`)
+    }
+
+    if (!knownItemNames.has(entry.item_name)) {
+      throw new Error(`Unknown item "${entry.item_name}" in costume item relationship.`)
+    }
+  }
 }
 
 export async function seedCatalog() {
@@ -76,6 +135,8 @@ export async function seedCatalog() {
   let createdItems = 0
   let updatedItems = 0
   let mergedItems = 0
+  let createdCostumes = 0
+  let createdCostumeItems = 0
 
   await sequelize.transaction(async (transaction) => {
     const categoryIds = new Map()
@@ -91,6 +152,7 @@ export async function seedCatalog() {
     }
 
     const catalogItemsByKey = new Map()
+    const itemLookup = new Map()
 
     for (const item of catalog.items) {
       const categoryId = categoryIds.get(item.category)
@@ -105,6 +167,45 @@ export async function seedCatalog() {
         updatedItems += 1
       }
       catalogItemsByKey.set(`${categoryId}\u0000${item.name}`, catalogItem)
+      itemLookup.set(item.name, catalogItem)
+    }
+
+    const costumeLookup = new Map()
+    for (const costume of catalog.costumes) {
+      const [catalogCostume, created] = await Costume.findOrCreate({
+        where: { name: costume.name },
+        defaults: {
+          name: costume.name,
+          description: costume.description ?? null,
+          urlPhoto: costume.url_photo ?? null,
+          source: costume.source ?? null,
+        },
+        transaction,
+      })
+      createdCostumes += Number(created)
+      costumeLookup.set(normalizeCostumeName(catalogCostume.name), catalogCostume)
+    }
+
+    for (const entry of catalog.costume_items) {
+      const costume = costumeLookup.get(normalizeCostumeName(entry.costume_name))
+      const item = itemLookup.get(entry.item_name)
+
+      if (!costume || !item) {
+        continue
+      }
+
+      const [costumeItem, created] = await CostumeItem.findOrCreate({
+        where: {
+          costumeId: costume.costumeId,
+          itemId: item.itemId,
+        },
+        defaults: {
+          costumeId: costume.costumeId,
+          itemId: item.itemId,
+        },
+        transaction,
+      })
+      createdCostumeItems += Number(created)
     }
 
     const existingItems = await Item.findAll({ transaction })
@@ -150,10 +251,14 @@ export async function seedCatalog() {
   return {
     categoriesInFile: catalog.categories.length,
     itemsInFile: catalog.items.length,
+    costumesInFile: catalog.costumes.length,
+    costumeItemsInFile: catalog.costume_items.length,
     categoriesCreated: createdCategories,
     itemsCreated: createdItems,
     itemsUpdated: updatedItems,
     legacyItemsMerged: mergedItems,
+    costumesCreated: createdCostumes,
+    costumeItemsCreated: createdCostumeItems,
   }
 }
 
@@ -161,7 +266,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   seedCatalog()
     .then((result) => {
       console.log(
-        `Catalog seed complete: ${result.categoriesCreated} categories, ${result.itemsCreated} items created, ${result.itemsUpdated} items updated, and ${result.legacyItemsMerged} legacy items merged.`,
+        `Catalog seed complete: ${result.categoriesCreated} categories, ${result.itemsCreated} items created, ${result.itemsUpdated} items updated, ${result.costumesCreated} costumes created, ${result.costumeItemsCreated} costume-item links created, and ${result.legacyItemsMerged} legacy items merged.`,
       )
     })
     .catch((error) => {

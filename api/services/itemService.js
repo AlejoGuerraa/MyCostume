@@ -98,6 +98,10 @@ export async function searchItems(filters = {}) {
   return getItems(filters)
 }
 
+export function validateSearchFilters(filters = {}) {
+  return buildItemQuery(filters)
+}
+
 export async function getCategories() {
   return Category.findAll({
     attributes: ['categoryId', 'name'],

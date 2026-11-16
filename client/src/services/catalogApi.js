@@ -53,7 +53,25 @@ export async function fetchItems({ categoryId, ids, signal } = {}) {
   return data.items
 }
 
-export async function searchItems(query, { categoryId, limit, signal } = {}) {
+export async function fetchCostumes({ signal } = {}) {
+  const data = await request('/costumes', { signal })
+  if (!Array.isArray(data.costumes)) {
+    throw new Error('The catalog service returned invalid characters.')
+  }
+
+  return data.costumes
+}
+
+export async function fetchCostume(costumeId, { signal } = {}) {
+  const data = await request(`/costumes/${encodeURIComponent(costumeId)}`, { signal })
+  if (!data.costume || !Array.isArray(data.costume.items)) {
+    throw new Error('The catalog service returned invalid character details.')
+  }
+
+  return data.costume
+}
+
+export async function searchCatalog(query, { categoryId, limit, signal } = {}) {
   const params = new URLSearchParams({ q: query })
   if (categoryId) {
     params.set('categoryId', categoryId)
@@ -62,10 +80,10 @@ export async function searchItems(query, { categoryId, limit, signal } = {}) {
     params.set('limit', String(limit))
   }
 
-  const data = await request(`/items/search?${params}`, { signal })
-  if (!Array.isArray(data.items)) {
-    throw new Error('The catalog service returned invalid search results.')
+  const data = await request(`/search?${params}`, { signal })
+  if (!Array.isArray(data.items) || !Array.isArray(data.costumes)) {
+    throw new Error('The catalog service returned invalid catalog search results.')
   }
 
-  return data.items
+  return { items: data.items, costumes: data.costumes }
 }

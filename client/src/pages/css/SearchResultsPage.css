@@ -47,6 +47,37 @@
   color: #d30005;
 }
 
+.search-result-section {
+  margin-top: 42px;
+}
+
+.search-result-section-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-result-section-heading h2 {
+  color: var(--ink);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.search-result-section-heading span {
+  color: var(--mute);
+  font-size: 12px;
+}
+
+.search-result-section .product-grid {
+  margin-top: 0;
+}
+
+.search-result-section .character-grid {
+  margin-top: 0;
+}
+
 @media (max-width: 600px) {
   .search-results-page {
     padding-top: 18px;

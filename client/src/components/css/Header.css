@@ -160,17 +160,29 @@
   right: 0;
   left: 0;
   z-index: 10;
-  overflow: hidden;
+  max-height: min(70vh, 480px);
+  overflow-y: auto;
   border: 1px solid var(--hairline-soft);
   background: var(--canvas);
 }
 
 .search-suggestions ul {
-  max-height: 320px;
   margin: 0;
   padding: 4px 0;
-  overflow-y: auto;
   list-style: none;
+}
+
+.suggestion-group + .suggestion-group {
+  border-top: 1px solid var(--hairline-soft);
+}
+
+.suggestion-group-title {
+  padding: 9px 16px 3px;
+  color: var(--mute);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .search-suggestions li button {
@@ -192,9 +204,13 @@
   background: var(--soft-cloud);
 }
 
-.suggestion-category {
+.suggestion-type {
+  flex: 0 0 auto;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  background: var(--soft-cloud);
   color: var(--mute);
-  font-size: 12px;
+  font-size: 10px;
   white-space: nowrap;
 }
 

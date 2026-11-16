@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import CategoryFilter from '../components/CategoryFilter.jsx'
+import CharacterCatalog from '../components/CharacterCatalog.jsx'
 import Footer from '../components/Footer.jsx'
 import Header from '../components/Header.jsx'
 import ProductCard from '../components/ProductCard.jsx'
@@ -141,6 +142,7 @@ function HomePage() {
               </div>
             )}
           </section>
+          <CharacterCatalog />
         </div>
       </main>
       <Footer />

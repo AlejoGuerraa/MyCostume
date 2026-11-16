@@ -32,3 +32,19 @@ test('every item references a defined category and an existing transparent PNG',
     assert.equal(image[25], 6, `${item.name} PNG must include an alpha channel`)
   }
 })
+
+test('costumes and costume-item links reference unique catalog records', () => {
+  assert.ok(Array.isArray(catalog.costumes))
+  assert.ok(Array.isArray(catalog.costume_items))
+
+  const costumeNames = catalog.costumes.map((costume) => costume.name)
+  assert.equal(new Set(costumeNames).size, costumeNames.length)
+
+  const itemNames = new Set(catalog.items.map((item) => item.name))
+  const knownCostumes = new Set(costumeNames)
+
+  for (const link of catalog.costume_items) {
+    assert.ok(knownCostumes.has(link.costume_name), `${link.costume_name} must exist`)
+    assert.ok(itemNames.has(link.item_name), `${link.item_name} must exist`)
+  }
+})

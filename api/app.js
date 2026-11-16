@@ -3,7 +3,9 @@ import cors from 'cors'
 import express from 'express'
 import helmet from 'helmet'
 import categoryRouter from './routes/categoryRoutes.js'
+import costumeRouter from './routes/costumeRoutes.js'
 import itemRouter from './routes/itemRoutes.js'
+import searchRouter from './routes/searchRoutes.js'
 import { errorHandler } from './middlewares/errorHandler.js'
 import { notFound } from './middlewares/notFound.js'
 
@@ -19,6 +21,8 @@ app.get('/api/health', (request, response) => {
 })
 app.use('/api/items', itemRouter)
 app.use('/api/categories', categoryRouter)
+app.use('/api/costumes', costumeRouter)
+app.use('/api/search', searchRouter)
 app.use(notFound)
 app.use(errorHandler)
 
