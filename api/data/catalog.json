@@ -12,101 +12,1334 @@
     "Weapons"
   ],
   "items": [
-    { "name": "Sunglasses", "category": "Accessories", "url_photo": "/item-images/sunglasses.png" },
-    { "name": "Aviator Sunglasses", "category": "Accessories", "url_photo": "/item-images/aviator-sunglasses.png" },
-    { "name": "Round Frame Glasses", "category": "Accessories", "url_photo": "/item-images/round-frame-glasses.png" },
-    { "name": "Tactical Gloves", "category": "Accessories", "url_photo": "/item-images/tactical-gloves.png" },
-    { "name": "Fingerless Gloves", "category": "Accessories", "url_photo": "/item-images/fingerless-gloves.png" },
-    { "name": "Leather Gloves", "category": "Accessories", "url_photo": "/item-images/leather-gloves.png" },
-    { "name": "Scarf", "category": "Accessories", "url_photo": "/item-images/scarf.png" },
-    { "name": "Chain Necklace", "category": "Accessories", "url_photo": "/item-images/chain-necklace.png" },
-    { "name": "Leather Belt", "category": "Accessories", "url_photo": "/item-images/leather-belt.png" },
-    { "name": "Wristwatch", "category": "Accessories", "url_photo": "/item-images/wristwatch.png" },
-    { "name": "Denim Jeans", "category": "Pants", "url_photo": "/item-images/denim-jeans.png" },
-    { "name": "Cargo Pants", "category": "Pants", "url_photo": "/item-images/cargo-pants.png" },
-    { "name": "Sweatpants", "category": "Pants", "url_photo": "/item-images/sweatpants.png" },
-    { "name": "Track Pants", "category": "Pants", "url_photo": "/item-images/track-pants.png" },
-    { "name": "Corduroy Trousers", "category": "Pants", "url_photo": "/item-images/corduroy-trousers.png" },
-    { "name": "Pinstripe Trousers", "category": "Pants", "url_photo": "/item-images/pinstripe-trousers.png" },
-    { "name": "Chinos", "category": "Pants", "url_photo": "/item-images/chinos.png" },
-    { "name": "Leather-look Pants", "category": "Pants", "url_photo": "/item-images/leather-look-pants.png" },
-    { "name": "T-shirt", "category": "T-shirts", "url_photo": "/item-images/t-shirt.png" },
-    { "name": "Striped T-shirt", "category": "T-shirts", "url_photo": "/item-images/striped-t-shirt.png" },
-    { "name": "Graphic Band T-shirt", "category": "T-shirts", "url_photo": "/item-images/graphic-band-t-shirt.png" },
-    { "name": "Long-Sleeve T-shirt", "category": "T-shirts", "url_photo": "/item-images/long-sleeve-t-shirt.png" },
-    { "name": "Henley T-shirt", "category": "T-shirts", "url_photo": "/item-images/henley-t-shirt.png" },
-    { "name": "Cropped T-shirt", "category": "T-shirts", "url_photo": "/item-images/cropped-t-shirt.png" },
-    { "name": "Oversized Graphic T-shirt", "category": "T-shirts", "url_photo": "/item-images/oversized-graphic-t-shirt.png" },
-    { "name": "Button-Down Shirt", "category": "Shirts", "url_photo": "/item-images/button-down-shirt.png" },
-    { "name": "Oxford Shirt", "category": "Shirts", "url_photo": "/item-images/oxford-shirt.png" },
-    { "name": "Plaid Flannel Shirt", "category": "Shirts", "url_photo": "/item-images/plaid-flannel-shirt.png" },
-    { "name": "Dress Shirt", "category": "Shirts", "url_photo": "/item-images/dress-shirt.png" },
-    { "name": "Denim Shirt", "category": "Shirts", "url_photo": "/item-images/denim-shirt.png" },
-    { "name": "Striped Business Shirt", "category": "Shirts", "url_photo": "/item-images/striped-business-shirt.png" },
-    { "name": "Plaid Shirt", "category": "Shirts", "url_photo": "/item-images/plaid-shirt.png" },
-    { "name": "Linen Shirt", "category": "Shirts", "url_photo": "/item-images/linen-shirt.png" },
-    { "name": "Short-Sleeve Camp Shirt", "category": "Shirts", "url_photo": "/item-images/short-sleeve-camp-shirt.png" },
-    { "name": "Ruffled Costume Shirt", "category": "Shirts", "url_photo": "/item-images/ruffled-costume-shirt.png" },
-    { "name": "Leather Jacket", "category": "Jackets", "url_photo": "/item-images/leather-jacket.png" },
-    { "name": "Bomber Jacket", "category": "Jackets", "url_photo": "/item-images/bomber-jacket.png" },
-    { "name": "Denim Jacket", "category": "Jackets", "url_photo": "/item-images/denim-jacket.png" },
-    { "name": "Field Jacket", "category": "Jackets", "url_photo": "/item-images/field-jacket.png" },
-    { "name": "Track Jacket", "category": "Jackets", "url_photo": "/item-images/track-jacket.png" },
-    { "name": "Motorcycle Jacket", "category": "Jackets", "url_photo": "/item-images/motorcycle-jacket.png" },
-    { "name": "Varsity Jacket", "category": "Jackets", "url_photo": "/item-images/varsity-jacket.png" },
-    { "name": "Quilted Puffer Jacket", "category": "Jackets", "url_photo": "/item-images/quilted-puffer-jacket.png" },
-    { "name": "Suede Jacket", "category": "Jackets", "url_photo": "/item-images/suede-jacket.png" },
-    { "name": "Hooded Windbreaker", "category": "Jackets", "url_photo": "/item-images/hooded-windbreaker.png" },
-    { "name": "Long Coat", "category": "Coats", "url_photo": "/item-images/long-coat.png" },
-    { "name": "Trench Coat", "category": "Coats", "url_photo": "/item-images/trench-coat.png" },
-    { "name": "Overcoat", "category": "Coats", "url_photo": "/item-images/overcoat.png" },
-    { "name": "Wool Coat", "category": "Coats", "url_photo": "/item-images/wool-coat.png" },
-    { "name": "Peacoat", "category": "Coats", "url_photo": "/item-images/peacoat.png" },
-    { "name": "Cape Coat", "category": "Coats", "url_photo": "/item-images/cape-coat.png" },
-    { "name": "Duster Coat", "category": "Coats", "url_photo": "/item-images/duster-coat.png" },
-    { "name": "Parka", "category": "Coats", "url_photo": "/item-images/parka.png" },
-    { "name": "Lab Coat", "category": "Coats", "url_photo": "/item-images/lab-coat.png" },
-    { "name": "Hooded Cloak", "category": "Coats", "url_photo": "/item-images/hooded-cloak.png" },
-    { "name": "Combat Boots", "category": "Footwear", "url_photo": "/item-images/combat-boots.png" },
-    { "name": "Lace-up Boots", "category": "Footwear", "url_photo": "/item-images/lace-up-boots.png" },
-    { "name": "Low-top Sneakers", "category": "Footwear", "url_photo": "/item-images/low-top-sneakers.png" },
-    { "name": "High-top Sneakers", "category": "Footwear", "url_photo": "/item-images/high-top-sneakers.png" },
-    { "name": "Dress Shoes", "category": "Footwear", "url_photo": "/item-images/dress-shoes.png" },
-    { "name": "Loafers", "category": "Footwear", "url_photo": "/item-images/loafers.png" },
-    { "name": "Hiking Boots", "category": "Footwear", "url_photo": "/item-images/hiking-boots.png" },
-    { "name": "Mary Jane Shoes", "category": "Footwear", "url_photo": "/item-images/mary-jane-shoes.png" },
-    { "name": "Ballet Flats", "category": "Footwear", "url_photo": "/item-images/ballet-flats.png" },
-    { "name": "Cowboy Boots", "category": "Footwear", "url_photo": "/item-images/cowboy-boots.png" },
-    { "name": "Fedora Hat", "category": "Headwear", "url_photo": "/item-images/fedora-hat.png" },
-    { "name": "Beanie", "category": "Headwear", "url_photo": "/item-images/beanie.png" },
-    { "name": "Baseball Cap", "category": "Headwear", "url_photo": "/item-images/baseball-cap.png" },
-    { "name": "Cowboy Hat", "category": "Headwear", "url_photo": "/item-images/cowboy-hat.png" },
-    { "name": "Flat Cap", "category": "Headwear", "url_photo": "/item-images/flat-cap.png" },
-    { "name": "Bucket Hat", "category": "Headwear", "url_photo": "/item-images/bucket-hat.png" },
-    { "name": "Knit Pom-pom Beanie", "category": "Headwear", "url_photo": "/item-images/knit-pom-pom-beanie.png" },
-    { "name": "Costume Police Cap", "category": "Headwear", "url_photo": "/item-images/costume-police-cap.png" },
-    { "name": "Crown Headband", "category": "Headwear", "url_photo": "/item-images/crown-headband.png" },
-    { "name": "Wide-brim Straw Hat", "category": "Headwear", "url_photo": "/item-images/wide-brim-straw-hat.png" },
-    { "name": "Retro Camera Prop", "category": "Props", "url_photo": "/item-images/retro-camera-prop.png" },
-    { "name": "Toy Walkie-Talkie", "category": "Props", "url_photo": "/item-images/toy-walkie-talkie.png" },
-    { "name": "Foam Shield", "category": "Props", "url_photo": "/item-images/foam-shield.png" },
-    { "name": "Wooden Walking Stick", "category": "Props", "url_photo": "/item-images/wooden-walking-stick.png" },
-    { "name": "Vintage Book", "category": "Props", "url_photo": "/item-images/vintage-book.png" },
-    { "name": "Plastic Badge", "category": "Props", "url_photo": "/item-images/plastic-badge.png" },
-    { "name": "Cardboard Map", "category": "Props", "url_photo": "/item-images/cardboard-map.png" },
-    { "name": "Toy Microphone", "category": "Props", "url_photo": "/item-images/toy-microphone.png" },
-    { "name": "Traveler Backpack", "category": "Props", "url_photo": "/item-images/traveler-backpack.png" },
-    { "name": "Briefcase", "category": "Props", "url_photo": "/item-images/briefcase.png" },
-    { "name": "Toy Pistol", "category": "Weapons", "url_photo": "/item-images/toy-pistol.png" },
-    { "name": "Foam Sword", "category": "Weapons", "url_photo": "/item-images/foam-sword.png" },
-    { "name": "Plastic Dagger", "category": "Weapons", "url_photo": "/item-images/plastic-dagger.png" },
-    { "name": "Foam Axe", "category": "Weapons", "url_photo": "/item-images/foam-axe.png" },
-    { "name": "Toy Ray Gun", "category": "Weapons", "url_photo": "/item-images/toy-ray-gun.png" },
-    { "name": "Wooden Training Staff", "category": "Weapons", "url_photo": "/item-images/wooden-training-staff.png" },
-    { "name": "Toy Bow and Arrow Set", "category": "Weapons", "url_photo": "/item-images/toy-bow-and-arrow-set.png" },
-    { "name": "Foam Nunchaku", "category": "Weapons", "url_photo": "/item-images/foam-nunchaku.png" },
-    { "name": "Costume Knight Shield", "category": "Weapons", "url_photo": "/item-images/costume-knight-shield.png" },
-    { "name": "Toy Laser Blaster", "category": "Weapons", "url_photo": "/item-images/toy-laser-blaster.png" }
+    {
+      "name": "Sunglasses",
+      "category": "Accessories",
+      "url_photo": "/item-images/sunglasses.png"
+    },
+    {
+      "name": "Aviator Sunglasses",
+      "category": "Accessories",
+      "url_photo": "/item-images/aviator-sunglasses.png"
+    },
+    {
+      "name": "Round Frame Glasses",
+      "category": "Accessories",
+      "url_photo": "/item-images/round-frame-glasses.png"
+    },
+    {
+      "name": "Tactical Gloves",
+      "category": "Accessories",
+      "url_photo": "/item-images/tactical-gloves.png"
+    },
+    {
+      "name": "Fingerless Gloves",
+      "category": "Accessories",
+      "url_photo": "/item-images/fingerless-gloves.png"
+    },
+    {
+      "name": "Leather Gloves",
+      "category": "Accessories",
+      "url_photo": "/item-images/leather-gloves.png"
+    },
+    {
+      "name": "Scarf",
+      "category": "Accessories",
+      "url_photo": "/item-images/scarf.png"
+    },
+    {
+      "name": "Chain Necklace",
+      "category": "Accessories",
+      "url_photo": "/item-images/chain-necklace.png"
+    },
+    {
+      "name": "Leather Belt",
+      "category": "Accessories",
+      "url_photo": "/item-images/leather-belt.png"
+    },
+    {
+      "name": "Wristwatch",
+      "category": "Accessories",
+      "url_photo": "/item-images/wristwatch.png"
+    },
+    {
+      "name": "Denim Jeans",
+      "category": "Pants",
+      "url_photo": "/item-images/denim-jeans.png"
+    },
+    {
+      "name": "Cargo Pants",
+      "category": "Pants",
+      "url_photo": "/item-images/cargo-pants.png"
+    },
+    {
+      "name": "Sweatpants",
+      "category": "Pants",
+      "url_photo": "/item-images/sweatpants.png"
+    },
+    {
+      "name": "Track Pants",
+      "category": "Pants",
+      "url_photo": "/item-images/track-pants.png"
+    },
+    {
+      "name": "Corduroy Trousers",
+      "category": "Pants",
+      "url_photo": "/item-images/corduroy-trousers.png"
+    },
+    {
+      "name": "Pinstripe Trousers",
+      "category": "Pants",
+      "url_photo": "/item-images/pinstripe-trousers.png"
+    },
+    {
+      "name": "Chinos",
+      "category": "Pants",
+      "url_photo": "/item-images/chinos.png"
+    },
+    {
+      "name": "Leather-look Pants",
+      "category": "Pants",
+      "url_photo": "/item-images/leather-look-pants.png"
+    },
+    {
+      "name": "T-shirt",
+      "category": "T-shirts",
+      "url_photo": "/item-images/t-shirt.png"
+    },
+    {
+      "name": "Striped T-shirt",
+      "category": "T-shirts",
+      "url_photo": "/item-images/striped-t-shirt.png"
+    },
+    {
+      "name": "Graphic Band T-shirt",
+      "category": "T-shirts",
+      "url_photo": "/item-images/graphic-band-t-shirt.png"
+    },
+    {
+      "name": "Long-Sleeve T-shirt",
+      "category": "T-shirts",
+      "url_photo": "/item-images/long-sleeve-t-shirt.png"
+    },
+    {
+      "name": "Henley T-shirt",
+      "category": "T-shirts",
+      "url_photo": "/item-images/henley-t-shirt.png"
+    },
+    {
+      "name": "Cropped T-shirt",
+      "category": "T-shirts",
+      "url_photo": "/item-images/cropped-t-shirt.png"
+    },
+    {
+      "name": "Oversized Graphic T-shirt",
+      "category": "T-shirts",
+      "url_photo": "/item-images/oversized-graphic-t-shirt.png"
+    },
+    {
+      "name": "Button-Down Shirt",
+      "category": "Shirts",
+      "url_photo": "/item-images/button-down-shirt.png"
+    },
+    {
+      "name": "Oxford Shirt",
+      "category": "Shirts",
+      "url_photo": "/item-images/oxford-shirt.png"
+    },
+    {
+      "name": "Plaid Flannel Shirt",
+      "category": "Shirts",
+      "url_photo": "/item-images/plaid-flannel-shirt.png"
+    },
+    {
+      "name": "Dress Shirt",
+      "category": "Shirts",
+      "url_photo": "/item-images/dress-shirt.png"
+    },
+    {
+      "name": "Denim Shirt",
+      "category": "Shirts",
+      "url_photo": "/item-images/denim-shirt.png"
+    },
+    {
+      "name": "Striped Business Shirt",
+      "category": "Shirts",
+      "url_photo": "/item-images/striped-business-shirt.png"
+    },
+    {
+      "name": "Plaid Shirt",
+      "category": "Shirts",
+      "url_photo": "/item-images/plaid-shirt.png"
+    },
+    {
+      "name": "Linen Shirt",
+      "category": "Shirts",
+      "url_photo": "/item-images/linen-shirt.png"
+    },
+    {
+      "name": "Short-Sleeve Camp Shirt",
+      "category": "Shirts",
+      "url_photo": "/item-images/short-sleeve-camp-shirt.png"
+    },
+    {
+      "name": "Ruffled Costume Shirt",
+      "category": "Shirts",
+      "url_photo": "/item-images/ruffled-costume-shirt.png"
+    },
+    {
+      "name": "Leather Jacket",
+      "category": "Jackets",
+      "url_photo": "/item-images/leather-jacket.png"
+    },
+    {
+      "name": "Bomber Jacket",
+      "category": "Jackets",
+      "url_photo": "/item-images/bomber-jacket.png"
+    },
+    {
+      "name": "Denim Jacket",
+      "category": "Jackets",
+      "url_photo": "/item-images/denim-jacket.png"
+    },
+    {
+      "name": "Field Jacket",
+      "category": "Jackets",
+      "url_photo": "/item-images/field-jacket.png"
+    },
+    {
+      "name": "Track Jacket",
+      "category": "Jackets",
+      "url_photo": "/item-images/track-jacket.png"
+    },
+    {
+      "name": "Motorcycle Jacket",
+      "category": "Jackets",
+      "url_photo": "/item-images/motorcycle-jacket.png"
+    },
+    {
+      "name": "Varsity Jacket",
+      "category": "Jackets",
+      "url_photo": "/item-images/varsity-jacket.png"
+    },
+    {
+      "name": "Quilted Puffer Jacket",
+      "category": "Jackets",
+      "url_photo": "/item-images/quilted-puffer-jacket.png"
+    },
+    {
+      "name": "Suede Jacket",
+      "category": "Jackets",
+      "url_photo": "/item-images/suede-jacket.png"
+    },
+    {
+      "name": "Hooded Windbreaker",
+      "category": "Jackets",
+      "url_photo": "/item-images/hooded-windbreaker.png"
+    },
+    {
+      "name": "Long Coat",
+      "category": "Coats",
+      "url_photo": "/item-images/long-coat.png"
+    },
+    {
+      "name": "Trench Coat",
+      "category": "Coats",
+      "url_photo": "/item-images/trench-coat.png"
+    },
+    {
+      "name": "Overcoat",
+      "category": "Coats",
+      "url_photo": "/item-images/overcoat.png"
+    },
+    {
+      "name": "Wool Coat",
+      "category": "Coats",
+      "url_photo": "/item-images/wool-coat.png"
+    },
+    {
+      "name": "Peacoat",
+      "category": "Coats",
+      "url_photo": "/item-images/peacoat.png"
+    },
+    {
+      "name": "Cape Coat",
+      "category": "Coats",
+      "url_photo": "/item-images/cape-coat.png"
+    },
+    {
+      "name": "Duster Coat",
+      "category": "Coats",
+      "url_photo": "/item-images/duster-coat.png"
+    },
+    {
+      "name": "Parka",
+      "category": "Coats",
+      "url_photo": "/item-images/parka.png"
+    },
+    {
+      "name": "Lab Coat",
+      "category": "Coats",
+      "url_photo": "/item-images/lab-coat.png"
+    },
+    {
+      "name": "Hooded Cloak",
+      "category": "Coats",
+      "url_photo": "/item-images/hooded-cloak.png"
+    },
+    {
+      "name": "Combat Boots",
+      "category": "Footwear",
+      "url_photo": "/item-images/combat-boots.png"
+    },
+    {
+      "name": "Lace-up Boots",
+      "category": "Footwear",
+      "url_photo": "/item-images/lace-up-boots.png"
+    },
+    {
+      "name": "Low-top Sneakers",
+      "category": "Footwear",
+      "url_photo": "/item-images/low-top-sneakers.png"
+    },
+    {
+      "name": "High-top Sneakers",
+      "category": "Footwear",
+      "url_photo": "/item-images/high-top-sneakers.png"
+    },
+    {
+      "name": "Dress Shoes",
+      "category": "Footwear",
+      "url_photo": "/item-images/dress-shoes.png"
+    },
+    {
+      "name": "Loafers",
+      "category": "Footwear",
+      "url_photo": "/item-images/loafers.png"
+    },
+    {
+      "name": "Hiking Boots",
+      "category": "Footwear",
+      "url_photo": "/item-images/hiking-boots.png"
+    },
+    {
+      "name": "Mary Jane Shoes",
+      "category": "Footwear",
+      "url_photo": "/item-images/mary-jane-shoes.png"
+    },
+    {
+      "name": "Ballet Flats",
+      "category": "Footwear",
+      "url_photo": "/item-images/ballet-flats.png"
+    },
+    {
+      "name": "Cowboy Boots",
+      "category": "Footwear",
+      "url_photo": "/item-images/cowboy-boots.png"
+    },
+    {
+      "name": "Fedora Hat",
+      "category": "Headwear",
+      "url_photo": "/item-images/fedora-hat.png"
+    },
+    {
+      "name": "Beanie",
+      "category": "Headwear",
+      "url_photo": "/item-images/beanie.png"
+    },
+    {
+      "name": "Baseball Cap",
+      "category": "Headwear",
+      "url_photo": "/item-images/baseball-cap.png"
+    },
+    {
+      "name": "Cowboy Hat",
+      "category": "Headwear",
+      "url_photo": "/item-images/cowboy-hat.png"
+    },
+    {
+      "name": "Flat Cap",
+      "category": "Headwear",
+      "url_photo": "/item-images/flat-cap.png"
+    },
+    {
+      "name": "Bucket Hat",
+      "category": "Headwear",
+      "url_photo": "/item-images/bucket-hat.png"
+    },
+    {
+      "name": "Knit Pom-pom Beanie",
+      "category": "Headwear",
+      "url_photo": "/item-images/knit-pom-pom-beanie.png"
+    },
+    {
+      "name": "Costume Police Cap",
+      "category": "Headwear",
+      "url_photo": "/item-images/costume-police-cap.png"
+    },
+    {
+      "name": "Crown Headband",
+      "category": "Headwear",
+      "url_photo": "/item-images/crown-headband.png"
+    },
+    {
+      "name": "Wide-brim Straw Hat",
+      "category": "Headwear",
+      "url_photo": "/item-images/wide-brim-straw-hat.png"
+    },
+    {
+      "name": "Retro Camera Prop",
+      "category": "Props",
+      "url_photo": "/item-images/retro-camera-prop.png"
+    },
+    {
+      "name": "Toy Walkie-Talkie",
+      "category": "Props",
+      "url_photo": "/item-images/toy-walkie-talkie.png"
+    },
+    {
+      "name": "Foam Shield",
+      "category": "Props",
+      "url_photo": "/item-images/foam-shield.png"
+    },
+    {
+      "name": "Wooden Walking Stick",
+      "category": "Props",
+      "url_photo": "/item-images/wooden-walking-stick.png"
+    },
+    {
+      "name": "Vintage Book",
+      "category": "Props",
+      "url_photo": "/item-images/vintage-book.png"
+    },
+    {
+      "name": "Plastic Badge",
+      "category": "Props",
+      "url_photo": "/item-images/plastic-badge.png"
+    },
+    {
+      "name": "Cardboard Map",
+      "category": "Props",
+      "url_photo": "/item-images/cardboard-map.png"
+    },
+    {
+      "name": "Toy Microphone",
+      "category": "Props",
+      "url_photo": "/item-images/toy-microphone.png"
+    },
+    {
+      "name": "Traveler Backpack",
+      "category": "Props",
+      "url_photo": "/item-images/traveler-backpack.png"
+    },
+    {
+      "name": "Briefcase",
+      "category": "Props",
+      "url_photo": "/item-images/briefcase.png"
+    },
+    {
+      "name": "Toy Pistol",
+      "category": "Weapons",
+      "url_photo": "/item-images/toy-pistol.png"
+    },
+    {
+      "name": "Foam Sword",
+      "category": "Weapons",
+      "url_photo": "/item-images/foam-sword.png"
+    },
+    {
+      "name": "Plastic Dagger",
+      "category": "Weapons",
+      "url_photo": "/item-images/plastic-dagger.png"
+    },
+    {
+      "name": "Foam Axe",
+      "category": "Weapons",
+      "url_photo": "/item-images/foam-axe.png"
+    },
+    {
+      "name": "Toy Ray Gun",
+      "category": "Weapons",
+      "url_photo": "/item-images/toy-ray-gun.png"
+    },
+    {
+      "name": "Wooden Training Staff",
+      "category": "Weapons",
+      "url_photo": "/item-images/wooden-training-staff.png"
+    },
+    {
+      "name": "Toy Bow and Arrow Set",
+      "category": "Weapons",
+      "url_photo": "/item-images/toy-bow-and-arrow-set.png"
+    },
+    {
+      "name": "Foam Nunchaku",
+      "category": "Weapons",
+      "url_photo": "/item-images/foam-nunchaku.png"
+    },
+    {
+      "name": "Costume Knight Shield",
+      "category": "Weapons",
+      "url_photo": "/item-images/costume-knight-shield.png"
+    },
+    {
+      "name": "Toy Laser Blaster",
+      "category": "Weapons",
+      "url_photo": "/item-images/toy-laser-blaster.png"
+    }
   ],
-  "costumes": []
+  "costumes": [
+    {
+      "name": "Indiana Jones",
+      "description": "Adventurer with iconic fedora hat",
+      "source": "Indiana Jones",
+      "url_photo": null
+    },
+    {
+      "name": "Top Gun Pilot (Maverick)",
+      "description": "U.S. Navy pilot with aviator sunglasses",
+      "source": "Top Gun",
+      "url_photo": null
+    },
+    {
+      "name": "Neo (The Matrix)",
+      "description": "Resistance leader in black coat and sunglasses",
+      "source": "The Matrix",
+      "url_photo": null
+    },
+    {
+      "name": "Trinity (The Matrix)",
+      "description": "Matrix fighter in black outfit and sunglasses",
+      "source": "The Matrix",
+      "url_photo": null
+    },
+    {
+      "name": "Woody (Toy Story)",
+      "description": "Cowboy doll with hat and boots",
+      "source": "Toy Story",
+      "url_photo": null
+    },
+    {
+      "name": "Harry Potter",
+      "description": "Boy wizard with round glasses",
+      "source": "Harry Potter",
+      "url_photo": null
+    },
+    {
+      "name": "Michael Jackson (Thriller)",
+      "description": "Pop star in red leather jacket",
+      "source": "Thriller",
+      "url_photo": null
+    },
+    {
+      "name": "Terminator (T-800)",
+      "description": "Cybernetic assassin in leather jacket",
+      "source": "The Terminator",
+      "url_photo": null
+    },
+    {
+      "name": "Michelangelo (TMNT)",
+      "description": "Ninja turtle with nunchaku",
+      "source": "Teenage Mutant Ninja Turtles",
+      "url_photo": null
+    },
+    {
+      "name": "Sherlock Holmes",
+      "description": "Detective with trench coat and scarf",
+      "source": "Sherlock Holmes",
+      "url_photo": null
+    },
+    {
+      "name": "Lucky Luke",
+      "description": "Cowboy hero with white hat",
+      "source": "Lucky Luke",
+      "url_photo": null
+    },
+    {
+      "name": "Police Officer",
+      "description": "Uniformed officer with cap and badge",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Medieval Knight",
+      "description": "Armored knight with shield and sword",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Count Dracula",
+      "description": "Vampire with dark hooded cloak",
+      "source": "Dracula (Stoker)",
+      "url_photo": null
+    },
+    {
+      "name": "Super Mario",
+      "description": "Video game plumber in red cap",
+      "source": "Super Mario",
+      "url_photo": null
+    },
+    {
+      "name": "Ash Ketchum",
+      "description": "Pokémon trainer with baseball cap",
+      "source": "Pokémon",
+      "url_photo": null
+    },
+    {
+      "name": "Soldier",
+      "description": "Infantry soldier with dog tags and combat boots",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "SWAT Officer",
+      "description": "Tactical officer with gloves",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Rock Singer",
+      "description": "Lead vocalist with microphone and leather pants",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Tourist",
+      "description": "Traveler with camera and map",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Pirate",
+      "description": "Swashbuckler with dagger and sword",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Green Arrow",
+      "description": "DC archer superhero with bow",
+      "source": "DC Comics",
+      "url_photo": null
+    },
+    {
+      "name": "Robin Hood",
+      "description": "Legendary archer in green outfit",
+      "source": "Folklore",
+      "url_photo": null
+    },
+    {
+      "name": "Katniss Everdeen",
+      "description": "Archer hero from dystopian saga",
+      "source": "The Hunger Games",
+      "url_photo": null
+    },
+    {
+      "name": "Astronaut",
+      "description": "Space traveler with ray gun toy",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Explorer",
+      "description": "Adventurer with backpack",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Track Athlete",
+      "description": "Runner in tracksuit",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "High School Athlete",
+      "description": "Teen in varsity jacket",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Biker",
+      "description": "Motorcyclist with leather gloves and jacket",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Scientist",
+      "description": "Researcher with lab coat",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Librarian",
+      "description": "Bookkeeper carrying a vintage book",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Merlin",
+      "description": "Medieval wizard in cloak",
+      "source": "Arthurian Legend",
+      "url_photo": null
+    },
+    {
+      "name": "Gandalf the Grey",
+      "description": "Wizard with hooded cloak and staff",
+      "source": "The Lord of the Rings",
+      "url_photo": null
+    },
+    {
+      "name": "Little Red Riding Hood",
+      "description": "Fairy-tale girl with red hooded cloak",
+      "source": "Fairy Tales",
+      "url_photo": null
+    },
+    {
+      "name": "King/Queen",
+      "description": "Monarch wearing a crown",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Mountaineer",
+      "description": "Mountain climber with parka",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "1920s Gangster",
+      "description": "Mobster with fedora and pinstripe",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Peaky Blinder",
+      "description": "1920s English gangster with flat cap",
+      "source": "Peaky Blinders (TV)",
+      "url_photo": null
+    },
+    {
+      "name": "Freddy Krueger",
+      "description": "Horror villain with fedora hat",
+      "source": "A Nightmare on Elm Street",
+      "url_photo": null
+    },
+    {
+      "name": "James Bond",
+      "description": "Spy with iconic wristwatch",
+      "source": "James Bond Films",
+      "url_photo": null
+    },
+    {
+      "name": "Clark Kent",
+      "description": "Reporter (Superman) with glasses",
+      "source": "Superman Comics",
+      "url_photo": null
+    },
+    {
+      "name": "Wednesday Addams",
+      "description": "Gothic girl with braids and Mary Janes",
+      "source": "The Addams Family",
+      "url_photo": null
+    },
+    {
+      "name": "Marty McFly",
+      "description": "Time traveler with denim jacket and sneakers",
+      "source": "Back to the Future",
+      "url_photo": null
+    },
+    {
+      "name": "Jake and Elwood Blues",
+      "description": "The Blues Brothers with suits and sunglasses",
+      "source": "The Blues Brothers",
+      "url_photo": null
+    },
+    {
+      "name": "John Lennon",
+      "description": "Musician with round glasses",
+      "source": "The Beatles",
+      "url_photo": null
+    },
+    {
+      "name": "Danny Zuko",
+      "description": "1950s greaser in leather jacket",
+      "source": "Grease",
+      "url_photo": null
+    },
+    {
+      "name": "Morpheus",
+      "description": "Mentor in black suit with sunglasses",
+      "source": "The Matrix",
+      "url_photo": null
+    },
+    {
+      "name": "Agent Smith",
+      "description": "Antagonist in suit and sunglasses",
+      "source": "The Matrix",
+      "url_photo": null
+    },
+    {
+      "name": "Sam Fisher",
+      "description": "Stealth operative (Splinter Cell) with goggles",
+      "source": "Splinter Cell (video game)",
+      "url_photo": null
+    },
+    {
+      "name": "Agent J (MIB)",
+      "description": "Secret agent in black suit with sunglasses",
+      "source": "Men in Black",
+      "url_photo": null
+    },
+    {
+      "name": "Freddie Mercury",
+      "description": "Rock frontman with microphone",
+      "source": "Queen (band)",
+      "url_photo": null
+    },
+    {
+      "name": "Captain Jack Sparrow",
+      "description": "Pirate captain with dagger and tricorn (boots)",
+      "source": "Pirates of the Caribbean",
+      "url_photo": null
+    },
+    {
+      "name": "Doctor (generic)",
+      "description": "Medical doctor with lab coat",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "WWII Pilot",
+      "description": "Pilot with bomber jacket and aviator sunglasses",
+      "source": "Historical",
+      "url_photo": null
+    },
+    {
+      "name": "Businessperson",
+      "description": "Office worker with briefcase",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Safari Explorer",
+      "description": "Adventurer with bucket hat",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Banker",
+      "description": "Professional with button-down shirt",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Superhero",
+      "description": "Generic superhero with cape",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Army Ranger",
+      "description": "Soldier with cargo pants",
+      "source": "Military",
+      "url_photo": null
+    },
+    {
+      "name": "College Student",
+      "description": "Young adult in chinos",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Casual Cowboy",
+      "description": "Western man in denim shirt",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Office Worker",
+      "description": "Employee with dress shirt",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Viking",
+      "description": "Barbarian with foam axe",
+      "source": "Historical",
+      "url_photo": null
+    },
+    {
+      "name": "Hiker",
+      "description": "Outdoor enthusiast with Henley shirt",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Jogger",
+      "description": "Runner in hooded windbreaker",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Ski Enthusiast",
+      "description": "Winter sports fan with knit beanie",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Rock Band Member",
+      "description": "Musician with leather pants",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Swing Dancer",
+      "description": "Dancer with loafers",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Film Noir Detective",
+      "description": "Detective in long coat",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Teenager",
+      "description": "Youth in casual sneakers",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Lumberjack",
+      "description": "Outdoorsman in plaid shirt",
+      "source": "Folklore",
+      "url_photo": null
+    },
+    {
+      "name": "Ski Instructor",
+      "description": "Instructor with puffer jacket",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Baroque Musician",
+      "description": "Classical musician in ruffled shirt",
+      "source": "Historical",
+      "url_photo": null
+    },
+    {
+      "name": "Kung Fu Master",
+      "description": "Martial artist with wooden staff",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Ballerina",
+      "description": "Dancer in ballet flats",
+      "source": "Generic",
+      "url_photo": null
+    },
+    {
+      "name": "Doctor Strange",
+      "description": "Marvel sorcerer with cloak",
+      "source": "Marvel Comics",
+      "url_photo": null
+    },
+    {
+      "name": "Ghostbuster (generic)",
+      "description": "Paranormal investigator with jumpsuit",
+      "source": "Ghostbusters",
+      "url_photo": null
+    }
+  ],
+  "costume_items": [
+    {
+      "costume_name": "Indiana Jones",
+      "item_name": "Fedora Hat"
+    },
+    {
+      "costume_name": "Indiana Jones",
+      "item_name": "Leather Jacket"
+    },
+    {
+      "costume_name": "Top Gun Pilot (Maverick)",
+      "item_name": "Aviator Sunglasses"
+    },
+    {
+      "costume_name": "Top Gun Pilot (Maverick)",
+      "item_name": "Bomber Jacket"
+    },
+    {
+      "costume_name": "Neo (The Matrix)",
+      "item_name": "Sunglasses"
+    },
+    {
+      "costume_name": "Neo (The Matrix)",
+      "item_name": "Leather Jacket"
+    },
+    {
+      "costume_name": "Trinity (The Matrix)",
+      "item_name": "Sunglasses"
+    },
+    {
+      "costume_name": "Trinity (The Matrix)",
+      "item_name": "Leather Jacket"
+    },
+    {
+      "costume_name": "Woody (Toy Story)",
+      "item_name": "Cowboy Hat"
+    },
+    {
+      "costume_name": "Woody (Toy Story)",
+      "item_name": "Cowboy Boots"
+    },
+    {
+      "costume_name": "Harry Potter",
+      "item_name": "Round Frame Glasses"
+    },
+    {
+      "costume_name": "Michael Jackson (Thriller)",
+      "item_name": "Leather Jacket"
+    },
+    {
+      "costume_name": "Terminator (T-800)",
+      "item_name": "Leather Jacket"
+    },
+    {
+      "costume_name": "Michelangelo (TMNT)",
+      "item_name": "Foam Nunchaku"
+    },
+    {
+      "costume_name": "Sherlock Holmes",
+      "item_name": "Trench Coat"
+    },
+    {
+      "costume_name": "Sherlock Holmes",
+      "item_name": "Scarf"
+    },
+    {
+      "costume_name": "Lucky Luke",
+      "item_name": "Cowboy Hat"
+    },
+    {
+      "costume_name": "Lucky Luke",
+      "item_name": "Cowboy Boots"
+    },
+    {
+      "costume_name": "Police Officer",
+      "item_name": "Costume Police Cap"
+    },
+    {
+      "costume_name": "Police Officer",
+      "item_name": "Plastic Badge"
+    },
+    {
+      "costume_name": "Medieval Knight",
+      "item_name": "Costume Knight Shield"
+    },
+    {
+      "costume_name": "Medieval Knight",
+      "item_name": "Foam Sword"
+    },
+    {
+      "costume_name": "Count Dracula",
+      "item_name": "Hooded Cloak"
+    },
+    {
+      "costume_name": "Super Mario",
+      "item_name": "Baseball Cap"
+    },
+    {
+      "costume_name": "Ash Ketchum",
+      "item_name": "Baseball Cap"
+    },
+    {
+      "costume_name": "Soldier",
+      "item_name": "Chain Necklace"
+    },
+    {
+      "costume_name": "Soldier",
+      "item_name": "Combat Boots"
+    },
+    {
+      "costume_name": "SWAT Officer",
+      "item_name": "Tactical Gloves"
+    },
+    {
+      "costume_name": "Rock Singer",
+      "item_name": "Toy Microphone"
+    },
+    {
+      "costume_name": "Rock Singer",
+      "item_name": "Leather-look Pants"
+    },
+    {
+      "costume_name": "Tourist",
+      "item_name": "Retro Camera Prop"
+    },
+    {
+      "costume_name": "Tourist",
+      "item_name": "Cardboard Map"
+    },
+    {
+      "costume_name": "Pirate",
+      "item_name": "Plastic Dagger"
+    },
+    {
+      "costume_name": "Pirate",
+      "item_name": "Foam Sword"
+    },
+    {
+      "costume_name": "Green Arrow",
+      "item_name": "Toy Bow and Arrow Set"
+    },
+    {
+      "costume_name": "Robin Hood",
+      "item_name": "Toy Bow and Arrow Set"
+    },
+    {
+      "costume_name": "Katniss Everdeen",
+      "item_name": "Toy Bow and Arrow Set"
+    },
+    {
+      "costume_name": "Astronaut",
+      "item_name": "Toy Ray Gun"
+    },
+    {
+      "costume_name": "Explorer",
+      "item_name": "Traveler Backpack"
+    },
+    {
+      "costume_name": "Track Athlete",
+      "item_name": "Track Jacket"
+    },
+    {
+      "costume_name": "Track Athlete",
+      "item_name": "Track Pants"
+    },
+    {
+      "costume_name": "High School Athlete",
+      "item_name": "Varsity Jacket"
+    },
+    {
+      "costume_name": "Biker",
+      "item_name": "Leather Gloves"
+    },
+    {
+      "costume_name": "Scientist",
+      "item_name": "Lab Coat"
+    },
+    {
+      "costume_name": "Librarian",
+      "item_name": "Vintage Book"
+    },
+    {
+      "costume_name": "Merlin",
+      "item_name": "Hooded Cloak"
+    },
+    {
+      "costume_name": "Gandalf the Grey",
+      "item_name": "Hooded Cloak"
+    },
+    {
+      "costume_name": "Gandalf the Grey",
+      "item_name": "Wooden Walking Stick"
+    },
+    {
+      "costume_name": "Little Red Riding Hood",
+      "item_name": "Hooded Cloak"
+    },
+    {
+      "costume_name": "King/Queen",
+      "item_name": "Crown Headband"
+    },
+    {
+      "costume_name": "Mountaineer",
+      "item_name": "Parka"
+    },
+    {
+      "costume_name": "Mountaineer",
+      "item_name": "Hiking Boots"
+    },
+    {
+      "costume_name": "1920s Gangster",
+      "item_name": "Fedora Hat"
+    },
+    {
+      "costume_name": "1920s Gangster",
+      "item_name": "Pinstripe Trousers"
+    },
+    {
+      "costume_name": "1920s Gangster",
+      "item_name": "Dress Shoes"
+    },
+    {
+      "costume_name": "Peaky Blinder",
+      "item_name": "Flat Cap"
+    },
+    {
+      "costume_name": "Freddy Krueger",
+      "item_name": "Fedora Hat"
+    },
+    {
+      "costume_name": "James Bond",
+      "item_name": "Wristwatch"
+    },
+    {
+      "costume_name": "Clark Kent",
+      "item_name": "Round Frame Glasses"
+    },
+    {
+      "costume_name": "Wednesday Addams",
+      "item_name": "Mary Jane Shoes"
+    },
+    {
+      "costume_name": "Marty McFly",
+      "item_name": "Denim Jacket"
+    },
+    {
+      "costume_name": "Marty McFly",
+      "item_name": "High-top Sneakers"
+    },
+    {
+      "costume_name": "Jake and Elwood Blues",
+      "item_name": "Sunglasses"
+    },
+    {
+      "costume_name": "John Lennon",
+      "item_name": "Round Frame Glasses"
+    },
+    {
+      "costume_name": "Danny Zuko",
+      "item_name": "Leather Jacket"
+    },
+    {
+      "costume_name": "Morpheus",
+      "item_name": "Sunglasses"
+    },
+    {
+      "costume_name": "Agent Smith",
+      "item_name": "Sunglasses"
+    },
+    {
+      "costume_name": "Sam Fisher",
+      "item_name": "Sunglasses"
+    },
+    {
+      "costume_name": "Agent J (MIB)",
+      "item_name": "Sunglasses"
+    },
+    {
+      "costume_name": "Freddie Mercury",
+      "item_name": "Toy Microphone"
+    },
+    {
+      "costume_name": "Captain Jack Sparrow",
+      "item_name": "Plastic Dagger"
+    },
+    {
+      "costume_name": "Doctor (generic)",
+      "item_name": "Lab Coat"
+    },
+    {
+      "costume_name": "WWII Pilot",
+      "item_name": "Bomber Jacket"
+    },
+    {
+      "costume_name": "WWII Pilot",
+      "item_name": "Aviator Sunglasses"
+    },
+    {
+      "costume_name": "Businessperson",
+      "item_name": "Briefcase"
+    },
+    {
+      "costume_name": "Safari Explorer",
+      "item_name": "Bucket Hat"
+    },
+    {
+      "costume_name": "Banker",
+      "item_name": "Button-Down Shirt"
+    },
+    {
+      "costume_name": "Superhero",
+      "item_name": "Cape Coat"
+    },
+    {
+      "costume_name": "Army Ranger",
+      "item_name": "Cargo Pants"
+    },
+    {
+      "costume_name": "College Student",
+      "item_name": "Chinos"
+    },
+    {
+      "costume_name": "Casual Cowboy",
+      "item_name": "Denim Shirt"
+    },
+    {
+      "costume_name": "Office Worker",
+      "item_name": "Dress Shirt"
+    },
+    {
+      "costume_name": "Viking",
+      "item_name": "Foam Axe"
+    },
+    {
+      "costume_name": "Hiker",
+      "item_name": "Henley T-shirt"
+    },
+    {
+      "costume_name": "Jogger",
+      "item_name": "Hooded Windbreaker"
+    },
+    {
+      "costume_name": "Ski Enthusiast",
+      "item_name": "Knit Pom-pom Beanie"
+    },
+    {
+      "costume_name": "Rock Band Member",
+      "item_name": "Leather-look Pants"
+    },
+    {
+      "costume_name": "Swing Dancer",
+      "item_name": "Loafers"
+    },
+    {
+      "costume_name": "Film Noir Detective",
+      "item_name": "Long Coat"
+    },
+    {
+      "costume_name": "Teenager",
+      "item_name": "Low-top Sneakers"
+    },
+    {
+      "costume_name": "Lumberjack",
+      "item_name": "Plaid Flannel Shirt"
+    },
+    {
+      "costume_name": "Ski Instructor",
+      "item_name": "Quilted Puffer Jacket"
+    },
+    {
+      "costume_name": "Baroque Musician",
+      "item_name": "Ruffled Costume Shirt"
+    },
+    {
+      "costume_name": "Kung Fu Master",
+      "item_name": "Wooden Training Staff"
+    },
+    {
+      "costume_name": "Ballerina",
+      "item_name": "Ballet Flats"
+    },
+    {
+      "costume_name": "Doctor Strange",
+      "item_name": "Hooded Cloak"
+    },
+    {
+      "costume_name": "Ghostbuster (generic)",
+      "item_name": "Lab Coat"
+    }
+  ]
 }
