@@ -493,433 +493,433 @@
       "name": "Indiana Jones",
       "description": "Adventurer with iconic fedora hat",
       "source": "Indiana Jones",
-      "url_photo": null
+      "url_photo": "/costume-images/indiana_jones.png"
     },
     {
       "name": "Top Gun Pilot (Maverick)",
       "description": "U.S. Navy pilot with aviator sunglasses",
       "source": "Top Gun",
-      "url_photo": null
+      "url_photo": "/costume-images/top_gun.png"
     },
     {
       "name": "Neo (The Matrix)",
       "description": "Resistance leader in black coat and sunglasses",
       "source": "The Matrix",
-      "url_photo": null
+      "url_photo": "/costume-images/neo_matrix.png"
     },
     {
       "name": "Trinity (The Matrix)",
       "description": "Matrix fighter in black outfit and sunglasses",
       "source": "The Matrix",
-      "url_photo": null
+      "url_photo": "/costume-images/trinity_matrix.png"
     },
     {
       "name": "Woody (Toy Story)",
       "description": "Cowboy doll with hat and boots",
       "source": "Toy Story",
-      "url_photo": null
+      "url_photo": "/costume-images/woody.png"
     },
     {
       "name": "Harry Potter",
       "description": "Boy wizard with round glasses",
       "source": "Harry Potter",
-      "url_photo": null
+      "url_photo": "/costume-images/harry_potter.png"
     },
     {
       "name": "Michael Jackson (Thriller)",
       "description": "Pop star in red leather jacket",
       "source": "Thriller",
-      "url_photo": null
+      "url_photo": "/costume-images/michael_jackson_thriller.png"
     },
     {
       "name": "Terminator (T-800)",
       "description": "Cybernetic assassin in leather jacket",
       "source": "The Terminator",
-      "url_photo": null
+      "url_photo": "/costume-images/terminator.png"
     },
     {
       "name": "Michelangelo (TMNT)",
       "description": "Ninja turtle with nunchaku",
       "source": "Teenage Mutant Ninja Turtles",
-      "url_photo": null
+      "url_photo": "/costume-images/michelangelo_tmnt.png"
     },
     {
       "name": "Sherlock Holmes",
       "description": "Detective with trench coat and scarf",
       "source": "Sherlock Holmes",
-      "url_photo": null
+      "url_photo": "/costume-images/sherlock_holmes.png"
     },
     {
       "name": "Lucky Luke",
       "description": "Cowboy hero with white hat",
       "source": "Lucky Luke",
-      "url_photo": null
+      "url_photo": "/costume-images/lucky_luke.png"
     },
     {
       "name": "Police Officer",
       "description": "Uniformed officer with cap and badge",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/police_officer.png"
     },
     {
       "name": "Medieval Knight",
       "description": "Armored knight with shield and sword",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/medieval_knight.png"
     },
     {
       "name": "Count Dracula",
       "description": "Vampire with dark hooded cloak",
       "source": "Dracula (Stoker)",
-      "url_photo": null
+      "url_photo": "/costume-images/count_draculla.png"
     },
     {
       "name": "Super Mario",
       "description": "Video game plumber in red cap",
       "source": "Super Mario",
-      "url_photo": null
+      "url_photo": "/costume-images/super_mario.png"
     },
     {
       "name": "Ash Ketchum",
       "description": "Pokémon trainer with baseball cap",
       "source": "Pokémon",
-      "url_photo": null
+      "url_photo": "/costume-images/ash_ketchum.png"
     },
     {
       "name": "Soldier",
       "description": "Infantry soldier with dog tags and combat boots",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/soldier.png"
     },
     {
       "name": "SWAT Officer",
       "description": "Tactical officer with gloves",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/swat_officer.png"
     },
     {
       "name": "Rock Singer",
       "description": "Lead vocalist with microphone and leather pants",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/rock_singer.png"
     },
     {
       "name": "Pirate",
       "description": "Swashbuckler with dagger and sword",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/pirate.png"
     },
     {
       "name": "Green Arrow",
       "description": "DC archer superhero with bow",
       "source": "DC Comics",
-      "url_photo": null
+      "url_photo": "/costume-images/green_arrow.png"
     },
     {
       "name": "Robin Hood",
       "description": "Legendary archer in green outfit",
       "source": "Folklore",
-      "url_photo": null
+      "url_photo": "/costume-images/robin_hood.png"
     },
     {
       "name": "Katniss Everdeen",
       "description": "Archer hero from dystopian saga",
       "source": "The Hunger Games",
-      "url_photo": null
+      "url_photo": "/costume-images/katniss_everdeen.png"
     },
     {
       "name": "Astronaut",
       "description": "Space traveler with ray gun toy",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/astronaut.png"
     },
     {
       "name": "Explorer",
       "description": "Adventurer with backpack",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/explorer.png"
     },
     {
       "name": "High School Athlete",
       "description": "Teen in varsity jacket",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/high_school_athlete.png"
     },
     {
       "name": "Biker",
       "description": "Motorcyclist with leather gloves and jacket",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/biker.png"
     },
     {
       "name": "Scientist",
       "description": "Researcher with lab coat",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/scientist.png"
     },
     {
       "name": "Librarian",
       "description": "Bookkeeper carrying a vintage book",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/librarian.png"
     },
     {
       "name": "Merlin",
       "description": "Medieval wizard in cloak",
       "source": "Arthurian Legend",
-      "url_photo": null
+      "url_photo": "/costume-images/merlin.png"
     },
     {
       "name": "Gandalf the Grey",
       "description": "Wizard with hooded cloak and staff",
       "source": "The Lord of the Rings",
-      "url_photo": null
+      "url_photo": "/costume-images/gandalf_the_grey.png"
     },
     {
       "name": "Little Red Riding Hood",
       "description": "Fairy-tale girl with red hooded cloak",
       "source": "Fairy Tales",
-      "url_photo": null
+      "url_photo": "/costume-images/little_red_riding_hood.png"
     },
     {
       "name": "King/Queen",
       "description": "Monarch wearing a crown",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/king_queen.png"
     },
     {
       "name": "Mountaineer",
       "description": "Mountain climber with parka",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/mountaineer.png"
     },
     {
       "name": "1920s Gangster",
       "description": "Mobster with fedora and pinstripe",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/1920_gangster.png"
     },
     {
       "name": "Peaky Blinder",
       "description": "1920s English gangster with flat cap",
       "source": "Peaky Blinders (TV)",
-      "url_photo": null
+      "url_photo": "/costume-images/peaky_blinder.png"
     },
     {
       "name": "Freddy Krueger",
       "description": "Horror villain with fedora hat",
       "source": "A Nightmare on Elm Street",
-      "url_photo": null
+      "url_photo": "/costume-images/freddy%20krueger.png"
     },
     {
       "name": "James Bond",
       "description": "Spy with iconic wristwatch",
       "source": "James Bond Films",
-      "url_photo": null
+      "url_photo": "/costume-images/james_bond.png"
     },
     {
       "name": "Clark Kent",
       "description": "Reporter (Superman) with glasses",
       "source": "Superman Comics",
-      "url_photo": null
+      "url_photo": "/costume-images/clark_kent.png"
     },
     {
       "name": "Wednesday Addams",
       "description": "Gothic girl with braids and Mary Janes",
       "source": "The Addams Family",
-      "url_photo": null
+      "url_photo": "/costume-images/wednesday_addams.png"
     },
     {
       "name": "Marty McFly",
       "description": "Time traveler with denim jacket and sneakers",
       "source": "Back to the Future",
-      "url_photo": null
+      "url_photo": "/costume-images/marty_mcfly.png"
     },
     {
       "name": "Jake and Elwood Blues",
       "description": "The Blues Brothers with suits and sunglasses",
       "source": "The Blues Brothers",
-      "url_photo": null
+      "url_photo": "/costume-images/blues_brothers.png"
     },
     {
       "name": "John Lennon",
       "description": "Musician with round glasses",
       "source": "The Beatles",
-      "url_photo": null
+      "url_photo": "/costume-images/john_lennon.png"
     },
     {
       "name": "Danny Zuko",
       "description": "1950s greaser in leather jacket",
       "source": "Grease",
-      "url_photo": null
+      "url_photo": "/costume-images/danny_zuko.png"
     },
     {
       "name": "Morpheus",
       "description": "Mentor in black suit with sunglasses",
       "source": "The Matrix",
-      "url_photo": null
+      "url_photo": "/costume-images/morpheus.png"
     },
     {
       "name": "Agent Smith",
       "description": "Antagonist in suit and sunglasses",
       "source": "The Matrix",
-      "url_photo": null
+      "url_photo": "/costume-images/agent_smith.png"
     },
     {
       "name": "Sam Fisher",
       "description": "Stealth operative (Splinter Cell) with goggles",
       "source": "Splinter Cell (video game)",
-      "url_photo": null
+      "url_photo": "/costume-images/sam_fisher.png"
     },
     {
       "name": "Agent J (MIB)",
       "description": "Secret agent in black suit with sunglasses",
       "source": "Men in Black",
-      "url_photo": null
+      "url_photo": "/costume-images/agent_j.png"
     },
     {
       "name": "Freddie Mercury",
       "description": "Rock frontman with microphone",
       "source": "Queen (band)",
-      "url_photo": null
+      "url_photo": "/costume-images/freddie_mercury.png"
     },
     {
       "name": "Captain Jack Sparrow",
       "description": "Pirate captain with dagger and tricorn (boots)",
       "source": "Pirates of the Caribbean",
-      "url_photo": null
+      "url_photo": "/costume-images/jack_sparrow.png"
     },
     {
       "name": "Doctor (generic)",
       "description": "Medical doctor with lab coat",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/doctor.png"
     },
     {
       "name": "WWII Pilot",
       "description": "Pilot with bomber jacket and aviator sunglasses",
       "source": "Historical",
-      "url_photo": null
+      "url_photo": "/costume-images/wwii_pilot.png"
     },
     {
       "name": "Businessperson",
       "description": "Office worker with briefcase",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/bussines_person.png"
     },
     {
       "name": "Safari Explorer",
       "description": "Adventurer with bucket hat",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/safari_explorer.png"
     },
     {
       "name": "Banker",
       "description": "Professional with button-down shirt",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/banker.png"
     },
     {
       "name": "Superhero",
       "description": "Generic superhero with cape",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/superman.png"
     },
     {
       "name": "Army Ranger",
       "description": "Soldier with cargo pants",
       "source": "Military",
-      "url_photo": null
+      "url_photo": "/costume-images/army_ranger.png"
     },
     {
       "name": "College Student",
       "description": "Young adult in chinos",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/college_student.png"
     },
     {
       "name": "Casual Cowboy",
       "description": "Western man in denim shirt",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/cowboy.png"
     },
     {
       "name": "Office Worker",
       "description": "Employee with dress shirt",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/office_worker.png"
     },
     {
       "name": "Viking",
       "description": "Barbarian with foam axe",
       "source": "Historical",
-      "url_photo": null
+      "url_photo": "/costume-images/viking.png"
     },
     {
       "name": "Hiker",
       "description": "Outdoor enthusiast with Henley shirt",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/hiker.png"
     },
     {
       "name": "Jogger",
       "description": "Runner in hooded windbreaker",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/jogger.png"
     },
     {
       "name": "Rock Band Member",
       "description": "Musician with leather pants",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/rock_band_member.png"
     },
     {
       "name": "Swing Dancer",
       "description": "Dancer with loafers",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/swing_dancer.png"
     },
     {
       "name": "Film Noir Detective",
       "description": "Detective in long coat",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/detective.png"
     },
     {
       "name": "Lumberjack",
       "description": "Outdoorsman in plaid shirt",
       "source": "Folklore",
-      "url_photo": null
+      "url_photo": "/costume-images/lumberjack.png"
     },
     {
       "name": "Baroque Musician",
       "description": "Classical musician in ruffled shirt",
       "source": "Historical",
-      "url_photo": null
+      "url_photo": "/costume-images/baroque_musician.png"
     },
     {
       "name": "Kung Fu Master",
       "description": "Martial artist with wooden staff",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/kung_fu_master.png"
     },
     {
       "name": "Ballerina",
       "description": "Dancer in ballet flats",
       "source": "Generic",
-      "url_photo": null
+      "url_photo": "/costume-images/ballerina.png"
     },
     {
       "name": "Doctor Strange",
       "description": "Marvel sorcerer with cloak",
       "source": "Marvel Comics",
-      "url_photo": null
+      "url_photo": "/costume-images/doctor_strange.png"
     },
     {
       "name": "Ghostbuster (generic)",
       "description": "Paranormal investigator with jumpsuit",
       "source": "Ghostbusters",
-      "url_photo": null
+      "url_photo": "/costume-images/ghostbuster.png"
     }
   ],
   "costume_items": [

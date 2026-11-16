@@ -136,6 +136,7 @@ export async function seedCatalog() {
   let updatedItems = 0
   let mergedItems = 0
   let createdCostumes = 0
+  let updatedCostumes = 0
   let createdCostumeItems = 0
 
   await sequelize.transaction(async (transaction) => {
@@ -183,6 +184,13 @@ export async function seedCatalog() {
         transaction,
       })
       createdCostumes += Number(created)
+      if (!created && catalogCostume.urlPhoto !== (costume.url_photo ?? null)) {
+        await catalogCostume.update(
+          { urlPhoto: costume.url_photo ?? null },
+          { transaction },
+        )
+        updatedCostumes += 1
+      }
       costumeLookup.set(normalizeCostumeName(catalogCostume.name), catalogCostume)
     }
 
@@ -258,6 +266,7 @@ export async function seedCatalog() {
     itemsUpdated: updatedItems,
     legacyItemsMerged: mergedItems,
     costumesCreated: createdCostumes,
+    costumesUpdated: updatedCostumes,
     costumeItemsCreated: createdCostumeItems,
   }
 }
@@ -266,7 +275,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   seedCatalog()
     .then((result) => {
       console.log(
-        `Catalog seed complete: ${result.categoriesCreated} categories, ${result.itemsCreated} items created, ${result.itemsUpdated} items updated, ${result.costumesCreated} costumes created, ${result.costumeItemsCreated} costume-item links created, and ${result.legacyItemsMerged} legacy items merged.`,
+        `Catalog seed complete: ${result.categoriesCreated} categories, ${result.itemsCreated} items created, ${result.itemsUpdated} items updated, ${result.costumesCreated} costumes created, ${result.costumesUpdated} costumes updated, ${result.costumeItemsCreated} costume-item links created, and ${result.legacyItemsMerged} legacy items merged.`,
       )
     })
     .catch((error) => {

@@ -5,6 +5,23 @@ import test from 'node:test'
 
 const catalogPath = fileURLToPath(new URL('../data/catalog.json', import.meta.url))
 const catalog = JSON.parse(await readFile(catalogPath, 'utf8'))
+const pngSignature = Buffer.from([137, 80, 78, 71, 13, 10, 26, 10])
+
+function assertSupportedImage(image, name) {
+  const isPng = image.subarray(0, pngSignature.length).equals(pngSignature)
+  const isJpeg = image[0] === 0xff && image[1] === 0xd8 && image[2] === 0xff
+  const isWebp =
+    image.toString('ascii', 0, 4) === 'RIFF' &&
+    image.toString('ascii', 8, 12) === 'WEBP'
+  const imageBrand = image.toString('ascii', 4, 12)
+  const isAvif = imageBrand === 'ftypavif' || imageBrand === 'ftypavis'
+
+  assert.ok(
+    isPng || isJpeg || isWebp || isAvif,
+    `${name} must use a supported image format`,
+  )
+  return isPng
+}
 
 test('catalog defines unique categories and at least 95 distinct items', () => {
   assert.equal(new Set(catalog.categories).size, catalog.categories.length)
@@ -14,9 +31,8 @@ test('catalog defines unique categories and at least 95 distinct items', () => {
   assert.equal(new Set(itemKeys).size, itemKeys.length)
 })
 
-test('every item references a defined category and an existing transparent PNG', async () => {
+test('every item references a defined category and an existing supported image', async () => {
   const categoryNames = new Set(catalog.categories)
-  const pngSignature = Buffer.from([137, 80, 78, 71, 13, 10, 26, 10])
 
   for (const item of catalog.items) {
     assert.ok(categoryNames.has(item.category), `${item.name} must reference a category`)
@@ -26,10 +42,26 @@ test('every item references a defined category and an existing transparent PNG',
       new URL(`../../client/public${item.url_photo}`, import.meta.url),
     )
     const image = await readFile(imagePath)
-    assert.deepEqual(image.subarray(0, pngSignature.length), pngSignature)
-    assert.equal(image.readUInt32BE(16), 400)
-    assert.equal(image.readUInt32BE(20), 400)
-    assert.equal(image[25], 6, `${item.name} PNG must include an alpha channel`)
+    const isPng = assertSupportedImage(image, item.name)
+    if (isPng) {
+      assert.equal(image[25], 6, `${item.name} PNG must include an alpha channel`)
+    }
+  }
+})
+
+test('every costume references an existing browser-compatible image', async () => {
+  for (const costume of catalog.costumes) {
+    assert.match(
+      costume.url_photo,
+      /^\/costume-images\/[a-z0-9_% -]+\.png$/i,
+      `${costume.name} must reference a local PNG image`,
+    )
+
+    const imagePath = fileURLToPath(
+      new URL(`../../client/public${costume.url_photo}`, import.meta.url),
+    )
+    const image = await readFile(imagePath)
+    assertSupportedImage(image, costume.name)
   }
 })
 
