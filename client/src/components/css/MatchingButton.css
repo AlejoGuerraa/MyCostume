@@ -1,0 +1,39 @@
+.matching-button {
+  position: fixed;
+  right: max(24px, calc((100vw - var(--content-width)) / 2));
+  bottom: 24px;
+  z-index: 20;
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  background: var(--ink);
+  color: var(--canvas);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 140ms ease, transform 140ms ease;
+}
+
+.matching-button:hover {
+  background: var(--charcoal);
+  transform: translateY(-2px);
+}
+
+.matching-button:focus-visible {
+  outline: 3px solid var(--hairline);
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .matching-button {
+    right: 12px;
+    bottom: max(12px, env(safe-area-inset-bottom));
+    min-height: 48px;
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}

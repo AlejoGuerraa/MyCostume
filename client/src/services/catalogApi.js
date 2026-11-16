@@ -1,9 +1,14 @@
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api'
 
-async function request(path, { signal } = {}) {
+async function request(path, { signal, method = 'GET', body } = {}) {
   let response
   try {
-    response = await fetch(`${API_BASE_URL}${path}`, { signal })
+    response = await fetch(`${API_BASE_URL}${path}`, {
+      method,
+      signal,
+      headers: body === undefined ? undefined : { 'Content-Type': 'application/json' },
+      body: body === undefined ? undefined : JSON.stringify(body),
+    })
   } catch (error) {
     if (error.name === 'AbortError') {
       throw error
@@ -86,4 +91,18 @@ export async function searchCatalog(query, { categoryId, limit, signal } = {}) {
   }
 
   return { items: data.items, costumes: data.costumes }
+}
+
+export async function fetchCostumeMatches(selectedItemIds, { signal } = {}) {
+  const data = await request('/matches', {
+    method: 'POST',
+    body: { selectedItemIds },
+    signal,
+  })
+
+  if (!Array.isArray(data.matches)) {
+    throw new Error('The catalog service returned invalid character matches.')
+  }
+
+  return data.matches
 }

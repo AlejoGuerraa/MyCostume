@@ -18,30 +18,15 @@
   display: inline-flex;
   flex: 0 0 auto;
   align-items: center;
-  gap: 12px;
-  color: var(--ink);
-  font-size: 19px;
-  font-weight: 650;
-  letter-spacing: -0.65px;
   text-decoration: none;
 }
 
-.brand-mark {
-  display: grid;
-  width: 40px;
-  height: 40px;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--ink);
-}
-
-.brand-mark svg {
-  width: 28px;
-  height: 28px;
-  stroke: #ffffff;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.35;
+.brand-logo {
+  display: block;
+  width: 136px;
+  max-height: 46px;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .header-search {
@@ -238,16 +223,6 @@
     max-width: none;
   }
 
-  .brand {
-    gap: 9px;
-    font-size: 18px;
-  }
-
-  .brand-mark {
-    width: 36px;
-    height: 36px;
-  }
-
   .search-field {
     height: 42px;
   }
@@ -267,19 +242,8 @@
     gap: 8px;
   }
 
-  .brand {
-    gap: 7px;
-    font-size: 16px;
-  }
-
-  .brand-mark {
-    width: 32px;
-    height: 32px;
-  }
-
-  .brand-mark svg {
-    width: 23px;
-    height: 23px;
+  .brand-logo {
+    width: 120px;
   }
 
   .selection-toggle {

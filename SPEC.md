@@ -446,3 +446,11 @@ The feature or release is considered done when:
 MyCostume is a costume-discovery application focused on catalog exploration, outfit composition, and smart recommendation. The system is intentionally simple, no-authentication, and user friendly, while still being structured to scale into a robust recommendation tool. The foundation already exists in the current codebase and should evolve in a disciplined, secure, and design-consistent manner.
 
 This specification acts as the implementation reference for the product’s current scope, target architecture, and required quality bar. Any future feature work should be measured against this document to ensure continuity, maintainability, and alignment with the project’s strategic goals.
+
+## 21. Deterministic Character Matching
+
+The application provides a catalog-based matching flow that compares the distinct item IDs in the user's browser selection with the items associated with each character through `CostumeItem`. Color variants do not create additional matches and do not impose color requirements.
+
+The matching API accepts the selected item IDs for the current request only; it does not persist user selections. It excludes characters with no matching items and returns each result's matched-item count, total associated-item count, missing-item count, matching percentage, character data, and associated items. Results are ordered by matched-item count descending, missing-item count ascending, percentage descending, then character name ascending.
+
+This deterministic flow is informational and does not add AI-generated suggestions, compatibility scoring, automatic outfit changes, or database records for user selections. Item ownership indicators on both character details and matching results are derived from the same LocalStorage selection state.

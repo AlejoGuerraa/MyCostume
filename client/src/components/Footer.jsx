@@ -1,4 +1,5 @@
 import './css/Footer.css'
+import { Link } from 'react-router-dom'
 
 const footerSections = [
   {
@@ -21,7 +22,9 @@ function Footer() {
       <div className="footer-inner">
         <div className="footer-main">
           <div className="footer-brand-block">
-            <p className="footer-brand">MyCostume</p>
+            <Link className="footer-brand" to="/" aria-label="MyCostume home">
+              <img src="/logo.png" alt="MyCostume" />
+            </Link>
             <p className="footer-description">
               MyCostume helps you discover costume ideas by combining everyday
               clothing, accessories, and props. Find your next character using
