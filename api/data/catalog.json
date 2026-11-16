@@ -604,12 +604,6 @@
       "url_photo": null
     },
     {
-      "name": "Tourist",
-      "description": "Traveler with camera and map",
-      "source": "Generic",
-      "url_photo": null
-    },
-    {
       "name": "Pirate",
       "description": "Swashbuckler with dagger and sword",
       "source": "Generic",
@@ -642,12 +636,6 @@
     {
       "name": "Explorer",
       "description": "Adventurer with backpack",
-      "source": "Generic",
-      "url_photo": null
-    },
-    {
-      "name": "Track Athlete",
-      "description": "Runner in tracksuit",
       "source": "Generic",
       "url_photo": null
     },
@@ -880,12 +868,6 @@
       "url_photo": null
     },
     {
-      "name": "Ski Enthusiast",
-      "description": "Winter sports fan with knit beanie",
-      "source": "Generic",
-      "url_photo": null
-    },
-    {
       "name": "Rock Band Member",
       "description": "Musician with leather pants",
       "source": "Generic",
@@ -904,21 +886,9 @@
       "url_photo": null
     },
     {
-      "name": "Teenager",
-      "description": "Youth in casual sneakers",
-      "source": "Generic",
-      "url_photo": null
-    },
-    {
       "name": "Lumberjack",
       "description": "Outdoorsman in plaid shirt",
       "source": "Folklore",
-      "url_photo": null
-    },
-    {
-      "name": "Ski Instructor",
-      "description": "Instructor with puffer jacket",
-      "source": "Generic",
       "url_photo": null
     },
     {
@@ -1074,14 +1044,6 @@
       "item_name": "Leather-look Pants"
     },
     {
-      "costume_name": "Tourist",
-      "item_name": "Retro Camera Prop"
-    },
-    {
-      "costume_name": "Tourist",
-      "item_name": "Cardboard Map"
-    },
-    {
       "costume_name": "Pirate",
       "item_name": "Plastic Dagger"
     },
@@ -1110,20 +1072,16 @@
       "item_name": "Traveler Backpack"
     },
     {
-      "costume_name": "Track Athlete",
-      "item_name": "Track Jacket"
-    },
-    {
-      "costume_name": "Track Athlete",
-      "item_name": "Track Pants"
-    },
-    {
       "costume_name": "High School Athlete",
       "item_name": "Varsity Jacket"
     },
     {
       "costume_name": "Biker",
       "item_name": "Leather Gloves"
+    },
+    {
+      "costume_name": "Biker",
+      "item_name": "Leather Jacket"
     },
     {
       "costume_name": "Scientist",
@@ -1294,10 +1252,6 @@
       "item_name": "Hooded Windbreaker"
     },
     {
-      "costume_name": "Ski Enthusiast",
-      "item_name": "Knit Pom-pom Beanie"
-    },
-    {
       "costume_name": "Rock Band Member",
       "item_name": "Leather-look Pants"
     },
@@ -1310,16 +1264,8 @@
       "item_name": "Long Coat"
     },
     {
-      "costume_name": "Teenager",
-      "item_name": "Low-top Sneakers"
-    },
-    {
       "costume_name": "Lumberjack",
       "item_name": "Plaid Flannel Shirt"
-    },
-    {
-      "costume_name": "Ski Instructor",
-      "item_name": "Quilted Puffer Jacket"
     },
     {
       "costume_name": "Baroque Musician",
