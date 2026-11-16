@@ -5,46 +5,40 @@ import {
   useState,
 } from 'react'
 import { SelectionContext } from './selectionContext.js'
+import {
+  DEFAULT_COLOR,
+  addSelectionVariant,
+  getSelectedItemIds,
+  hasSelectedVariant,
+  readStoredSelection,
+  reconcileSelections,
+  removeSelectionVariant,
+} from '../utils/selectionUtils.js'
 
-const STORAGE_KEY = 'mycostume:selected-item-ids'
+const STORAGE_KEY = 'mycostume:selected-item-variants'
 
-function readStoredSelection() {
+function readStoredSelectionValue() {
   try {
     const storedValue = window.localStorage.getItem(STORAGE_KEY)
     if (storedValue === null) {
-      return { ids: [], message: '' }
+      return { selections: [], message: '' }
     }
 
     const parsedValue = JSON.parse(storedValue)
-    if (!Array.isArray(parsedValue)) {
-      return { ids: [], message: 'Saved selections were invalid and have been cleared.' }
-    }
-
-    const validIds = parsedValue.filter(
-      (itemId) => Number.isSafeInteger(itemId) && itemId > 0,
-    )
-    const uniqueIds = [...new Set(validIds)]
-    const containedInvalidValues =
-      validIds.length !== parsedValue.length || uniqueIds.length !== parsedValue.length
-
-    return {
-      ids: uniqueIds,
-      message: containedInvalidValues
-        ? 'Invalid or duplicate saved selections were removed.'
-        : '',
-    }
+    return readStoredSelection(parsedValue)
   } catch {
-    return { ids: [], message: 'Saved selections could not be read and were reset.' }
+    return { selections: [], message: 'Saved selections could not be read and were reset.' }
   }
 }
 
 export function SelectionProvider({ children }) {
-  const [selection, setSelection] = useState(readStoredSelection)
-  const selectedItemIds = selection.ids
+  const [selection, setSelection] = useState(readStoredSelectionValue)
+  const selectedVariants = selection.selections
+  const selectedItemIds = getSelectedItemIds(selectedVariants)
 
   useEffect(() => {
     try {
-      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(selectedItemIds))
+      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(selectedVariants))
     } catch {
       window.setTimeout(() => {
         setSelection((current) => ({
@@ -53,34 +47,38 @@ export function SelectionProvider({ children }) {
         }))
       }, 0)
     }
-  }, [selectedItemIds])
+  }, [selectedVariants])
 
-  const addSelectedItem = useCallback((itemId) => {
+  const addSelectedItem = useCallback((itemId, color = DEFAULT_COLOR) => {
     if (!Number.isSafeInteger(itemId) || itemId < 1) {
       return
     }
 
     setSelection((current) => ({
-      ids: current.ids.includes(itemId) ? current.ids : [...current.ids, itemId],
+      selections: addSelectionVariant(current.selections, itemId, color),
       message: '',
     }))
   }, [])
 
-  const removeSelectedItem = useCallback((itemId) => {
+  const removeSelectedItem = useCallback((selectionId) => {
     setSelection((current) => ({
-      ids: current.ids.filter((selectedId) => selectedId !== itemId),
+      selections: removeSelectionVariant(current.selections, selectionId),
       message: '',
     }))
   }, [])
+
+  const isSelectedForColor = useCallback(
+    (itemId, color) => hasSelectedVariant(selectedVariants, itemId, color),
+    [selectedVariants],
+  )
 
   const reconcileSelectedItems = useCallback((availableIds) => {
-    const availableIdSet = new Set(availableIds)
     setSelection((current) => {
-      const ids = current.ids.filter((itemId) => availableIdSet.has(itemId))
-      return ids.length === current.ids.length
+      const nextSelections = reconcileSelections(current.selections, availableIds)
+      return nextSelections.length === current.selections.length
         ? current
         : {
-            ids,
+            selections: nextSelections,
             message: 'Items no longer in the catalog were removed from your selection.',
           }
     })
@@ -88,17 +86,21 @@ export function SelectionProvider({ children }) {
 
   const contextValue = useMemo(
     () => ({
+      selectedVariants,
       selectedItemIds,
       storageMessage: selection.message,
       addSelectedItem,
       removeSelectedItem,
+      isSelectedForColor,
       reconcileSelectedItems,
     }),
     [
       addSelectedItem,
+      isSelectedForColor,
       reconcileSelectedItems,
       removeSelectedItem,
       selectedItemIds,
+      selectedVariants,
       selection.message,
     ],
   )

@@ -13,7 +13,7 @@ function HomePage() {
   const [searchParams, setSearchParams] = useSearchParams()
   const categoryId = searchParams.get('categoryId') || ''
   const { categories, error: categoriesError } = useCategories()
-  const { selectedItemIds, addSelectedItem, removeSelectedItem } = useSelection()
+  const { addSelectedItem, isSelectedForColor, removeSelectedItem } = useSelection()
   const [catalogResult, setCatalogResult] = useState({
     categoryId: null,
     items: [],
@@ -53,11 +53,11 @@ function HomePage() {
     setSearchParams(nextParams, { replace: true })
   }
 
-  function toggleItem(itemId) {
-    if (selectedItemIds.includes(itemId)) {
-      removeSelectedItem(itemId)
+  function toggleItem(itemId, color) {
+    if (isSelectedForColor(itemId, color)) {
+      removeSelectedItem(`item-${itemId}-${color.hex.toLowerCase()}`)
     } else {
-      addSelectedItem(itemId)
+      addSelectedItem(itemId, color)
     }
   }
 
@@ -134,7 +134,7 @@ function HomePage() {
                   <ProductCard
                     item={item}
                     key={item.itemId}
-                    selected={selectedItemIds.includes(item.itemId)}
+                    isSelectedForColor={isSelectedForColor}
                     onToggle={toggleItem}
                   />
                 ))}

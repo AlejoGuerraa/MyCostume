@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { useSelection } from '../context/useSelection.js'
+import { DEFAULT_COLOR } from '../utils/colorPalette.js'
 import { searchItems } from '../services/catalogApi.js'
 import './css/SearchBar.css'
 
@@ -71,7 +72,7 @@ function SearchBar() {
   }
 
   function selectSuggestion(item) {
-    addSelectedItem(item.itemId)
+    addSelectedItem(item.itemId, DEFAULT_COLOR)
     setShowSuggestions(false)
   }
 

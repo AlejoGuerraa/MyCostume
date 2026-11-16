@@ -5,12 +5,12 @@ import './css/SelectedItemsPanel.css'
 
 function SelectedItemsPanel({ onClose }) {
   const {
-    selectedItemIds,
+    selectedVariants,
     storageMessage,
     removeSelectedItem,
     reconcileSelectedItems,
   } = useSelection()
-  const selectedKey = selectedItemIds.join(',')
+  const selectedKey = selectedVariants.map((selection) => selection.selectionId).join(',')
   const [itemResult, setItemResult] = useState({
     key: null,
     items: [],
@@ -18,23 +18,32 @@ function SelectedItemsPanel({ onClose }) {
   })
 
   useEffect(() => {
-    if (!selectedKey) {
+    if (selectedVariants.length === 0) {
       return undefined
     }
 
     const controller = new AbortController()
+    const itemIds = [...new Set(selectedVariants.map((selection) => selection.itemId))]
 
     fetchItems({
-      ids: selectedKey.split(',').map(Number),
+      ids: itemIds,
       signal: controller.signal,
     })
       .then((results) => {
-      if (controller.signal.aborted) {
-        return
+        if (controller.signal.aborted) {
+          return
         }
 
-      setItemResult({ key: selectedKey, items: results, error: '' })
-        reconcileSelectedItems(results.map((item) => item.itemId))
+        const itemLookup = new Map(results.map((item) => [item.itemId, item]))
+        const nextItems = selectedVariants
+          .map((selection) => ({
+            ...selection,
+            item: itemLookup.get(selection.itemId),
+          }))
+          .filter((selection) => Boolean(selection.item))
+
+        setItemResult({ key: selectedKey, items: nextItems, error: '' })
+        reconcileSelectedItems(itemIds)
       })
       .catch((requestError) => {
         if (!controller.signal.aborted) {
@@ -47,12 +56,13 @@ function SelectedItemsPanel({ onClose }) {
       })
 
     return () => controller.abort()
-  }, [reconcileSelectedItems, selectedKey])
+  }, [reconcileSelectedItems, selectedKey, selectedVariants])
 
+  const hasNoSelections = selectedVariants.length === 0
   const hasCurrentResult = itemResult.key === selectedKey
-  const items = hasCurrentResult ? itemResult.items : []
-  const error = hasCurrentResult ? itemResult.error : ''
-  const loading = Boolean(selectedKey) && !hasCurrentResult
+  const items = hasNoSelections ? [] : hasCurrentResult ? itemResult.items : []
+  const error = hasNoSelections ? '' : hasCurrentResult ? itemResult.error : ''
+  const loading = !hasNoSelections && !hasCurrentResult
 
   return (
     <section
@@ -91,16 +101,25 @@ function SelectedItemsPanel({ onClose }) {
       )}
       {!loading && !error && items.length > 0 && (
         <ul className="selected-item-list">
-          {items.map((item) => (
-            <li key={item.itemId}>
-              <div>
-                <span className="selected-item-name">{item.name}</span>
-                <span className="selected-item-category">{item.category.name}</span>
+          {items.map((selection) => (
+            <li key={selection.selectionId}>
+              <div className="selected-item-main">
+                <span
+                  className="selected-item-swatch"
+                  style={{ backgroundColor: selection.color.hex }}
+                  aria-hidden="true"
+                />
+                <div>
+                  <span className="selected-item-name">{selection.item.name}</span>
+                  <span className="selected-item-category">
+                    {selection.color.name} · {selection.item.category.name}
+                  </span>
+                </div>
               </div>
               <button
                 type="button"
-                onClick={() => removeSelectedItem(item.itemId)}
-                aria-label={`Remove ${item.name}`}
+                onClick={() => removeSelectedItem(selection.selectionId)}
+                aria-label={`Remove ${selection.item.name} in ${selection.color.name}`}
               >
                 Remove
               </button>

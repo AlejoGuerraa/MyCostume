@@ -18,7 +18,7 @@ function BrandMark() {
 
 function Header() {
   const [selectionOpen, setSelectionOpen] = useState(false)
-  const { selectedItemIds } = useSelection()
+  const { selectedVariants } = useSelection()
 
   return (
     <header className="site-header">
@@ -45,7 +45,7 @@ function Header() {
               <path d="M9 8V6a3 3 0 0 1 6 0v2" />
             </svg>
             <span>My items</span>
-            <span className="selection-count">{selectedItemIds.length}</span>
+            <span className="selection-count">{selectedVariants.length}</span>
           </button>
           {selectionOpen && (
             <SelectedItemsPanel onClose={() => setSelectionOpen(false)} />
