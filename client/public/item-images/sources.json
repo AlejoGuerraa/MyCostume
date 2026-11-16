@@ -1,0 +1,481 @@
+{
+  "source": "Openclipart",
+  "license": "Public domain",
+  "items": [
+    {
+      "name": "Sunglasses",
+      "file": "sunglasses.png",
+      "sourceUrl": "https://openclipart.org/detail/322482"
+    },
+    {
+      "name": "Aviator Sunglasses",
+      "file": "aviator-sunglasses.png",
+      "sourceUrl": "https://openclipart.org/detail/322482"
+    },
+    {
+      "name": "Round Frame Glasses",
+      "file": "round-frame-glasses.png",
+      "sourceUrl": "https://openclipart.org/detail/275579"
+    },
+    {
+      "name": "Tactical Gloves",
+      "file": "tactical-gloves.png",
+      "sourceUrl": "https://openclipart.org/detail/289647"
+    },
+    {
+      "name": "Fingerless Gloves",
+      "file": "fingerless-gloves.png",
+      "sourceUrl": "https://openclipart.org/detail/289647"
+    },
+    {
+      "name": "Leather Gloves",
+      "file": "leather-gloves.png",
+      "sourceUrl": "https://openclipart.org/detail/169113"
+    },
+    {
+      "name": "Scarf",
+      "file": "scarf.png",
+      "sourceUrl": "https://openclipart.org/detail/214330"
+    },
+    {
+      "name": "Chain Necklace",
+      "file": "chain-necklace.png",
+      "sourceUrl": "https://openclipart.org/detail/279096"
+    },
+    {
+      "name": "Leather Belt",
+      "file": "leather-belt.png",
+      "sourceUrl": "https://openclipart.org/detail/345432"
+    },
+    {
+      "name": "Wristwatch",
+      "file": "wristwatch.png",
+      "sourceUrl": "https://openclipart.org/detail/326312"
+    },
+    {
+      "name": "Denim Jeans",
+      "file": "denim-jeans.png",
+      "sourceUrl": "https://openclipart.org/detail/263802"
+    },
+    {
+      "name": "Cargo Pants",
+      "file": "cargo-pants.png",
+      "sourceUrl": "https://openclipart.org/detail/345423"
+    },
+    {
+      "name": "Sweatpants",
+      "file": "sweatpants.png",
+      "sourceUrl": "https://openclipart.org/detail/168770"
+    },
+    {
+      "name": "Track Pants",
+      "file": "track-pants.png",
+      "sourceUrl": "https://openclipart.org/detail/168774"
+    },
+    {
+      "name": "Corduroy Trousers",
+      "file": "corduroy-trousers.png",
+      "sourceUrl": "https://openclipart.org/detail/345423"
+    },
+    {
+      "name": "Pinstripe Trousers",
+      "file": "pinstripe-trousers.png",
+      "sourceUrl": "https://openclipart.org/detail/345437"
+    },
+    {
+      "name": "Chinos",
+      "file": "chinos.png",
+      "sourceUrl": "https://openclipart.org/detail/345423"
+    },
+    {
+      "name": "Leather-look Pants",
+      "file": "leather-look-pants.png",
+      "sourceUrl": "https://openclipart.org/detail/345437"
+    },
+    {
+      "name": "T-shirt",
+      "file": "t-shirt.png",
+      "sourceUrl": "https://openclipart.org/detail/322939"
+    },
+    {
+      "name": "Striped T-shirt",
+      "file": "striped-t-shirt.png",
+      "sourceUrl": "https://openclipart.org/detail/355537"
+    },
+    {
+      "name": "Graphic Band T-shirt",
+      "file": "graphic-band-t-shirt.png",
+      "sourceUrl": "https://openclipart.org/detail/166389"
+    },
+    {
+      "name": "Long-Sleeve T-shirt",
+      "file": "long-sleeve-t-shirt.png",
+      "sourceUrl": "https://openclipart.org/detail/46549"
+    },
+    {
+      "name": "Henley T-shirt",
+      "file": "henley-t-shirt.png",
+      "sourceUrl": "https://openclipart.org/detail/177398"
+    },
+    {
+      "name": "Cropped T-shirt",
+      "file": "cropped-t-shirt.png",
+      "sourceUrl": "https://openclipart.org/detail/322939"
+    },
+    {
+      "name": "Oversized Graphic T-shirt",
+      "file": "oversized-graphic-t-shirt.png",
+      "sourceUrl": "https://openclipart.org/detail/166389"
+    },
+    {
+      "name": "Button-Down Shirt",
+      "file": "button-down-shirt.png",
+      "sourceUrl": "https://openclipart.org/detail/284546"
+    },
+    {
+      "name": "Oxford Shirt",
+      "file": "oxford-shirt.png",
+      "sourceUrl": "https://openclipart.org/detail/291723"
+    },
+    {
+      "name": "Plaid Flannel Shirt",
+      "file": "plaid-flannel-shirt.png",
+      "sourceUrl": "https://openclipart.org/detail/291654"
+    },
+    {
+      "name": "Dress Shirt",
+      "file": "dress-shirt.png",
+      "sourceUrl": "https://openclipart.org/detail/284546"
+    },
+    {
+      "name": "Denim Shirt",
+      "file": "denim-shirt.png",
+      "sourceUrl": "https://openclipart.org/detail/46549"
+    },
+    {
+      "name": "Striped Business Shirt",
+      "file": "striped-business-shirt.png",
+      "sourceUrl": "https://openclipart.org/detail/291654"
+    },
+    {
+      "name": "Plaid Shirt",
+      "file": "plaid-shirt.png",
+      "sourceUrl": "https://openclipart.org/detail/291723"
+    },
+    {
+      "name": "Linen Shirt",
+      "file": "linen-shirt.png",
+      "sourceUrl": "https://openclipart.org/detail/46549"
+    },
+    {
+      "name": "Short-Sleeve Camp Shirt",
+      "file": "short-sleeve-camp-shirt.png",
+      "sourceUrl": "https://openclipart.org/detail/177426"
+    },
+    {
+      "name": "Ruffled Costume Shirt",
+      "file": "ruffled-costume-shirt.png",
+      "sourceUrl": "https://openclipart.org/detail/46549"
+    },
+    {
+      "name": "Leather Jacket",
+      "file": "leather-jacket.png",
+      "sourceUrl": "https://openclipart.org/detail/24641"
+    },
+    {
+      "name": "Bomber Jacket",
+      "file": "bomber-jacket.png",
+      "sourceUrl": "https://openclipart.org/detail/192065"
+    },
+    {
+      "name": "Denim Jacket",
+      "file": "denim-jacket.png",
+      "sourceUrl": "https://openclipart.org/detail/7032"
+    },
+    {
+      "name": "Field Jacket",
+      "file": "field-jacket.png",
+      "sourceUrl": "https://openclipart.org/detail/7032"
+    },
+    {
+      "name": "Track Jacket",
+      "file": "track-jacket.png",
+      "sourceUrl": "https://openclipart.org/detail/192065"
+    },
+    {
+      "name": "Motorcycle Jacket",
+      "file": "motorcycle-jacket.png",
+      "sourceUrl": "https://openclipart.org/detail/24641"
+    },
+    {
+      "name": "Varsity Jacket",
+      "file": "varsity-jacket.png",
+      "sourceUrl": "https://openclipart.org/detail/192065"
+    },
+    {
+      "name": "Quilted Puffer Jacket",
+      "file": "quilted-puffer-jacket.png",
+      "sourceUrl": "https://openclipart.org/detail/7032"
+    },
+    {
+      "name": "Suede Jacket",
+      "file": "suede-jacket.png",
+      "sourceUrl": "https://openclipart.org/detail/7032"
+    },
+    {
+      "name": "Hooded Windbreaker",
+      "file": "hooded-windbreaker.png",
+      "sourceUrl": "https://openclipart.org/detail/192065"
+    },
+    {
+      "name": "Long Coat",
+      "file": "long-coat.png",
+      "sourceUrl": "https://openclipart.org/detail/208912"
+    },
+    {
+      "name": "Trench Coat",
+      "file": "trench-coat.png",
+      "sourceUrl": "https://openclipart.org/detail/355196"
+    },
+    {
+      "name": "Overcoat",
+      "file": "overcoat.png",
+      "sourceUrl": "https://openclipart.org/detail/208912"
+    },
+    {
+      "name": "Wool Coat",
+      "file": "wool-coat.png",
+      "sourceUrl": "https://openclipart.org/detail/208912"
+    },
+    {
+      "name": "Peacoat",
+      "file": "peacoat.png",
+      "sourceUrl": "https://openclipart.org/detail/208912"
+    },
+    {
+      "name": "Cape Coat",
+      "file": "cape-coat.png",
+      "sourceUrl": "https://openclipart.org/detail/283311"
+    },
+    {
+      "name": "Duster Coat",
+      "file": "duster-coat.png",
+      "sourceUrl": "https://openclipart.org/detail/213900"
+    },
+    {
+      "name": "Parka",
+      "file": "parka.png",
+      "sourceUrl": "https://openclipart.org/detail/213900"
+    },
+    {
+      "name": "Lab Coat",
+      "file": "lab-coat.png",
+      "sourceUrl": "https://openclipart.org/detail/215140"
+    },
+    {
+      "name": "Hooded Cloak",
+      "file": "hooded-cloak.png",
+      "sourceUrl": "https://openclipart.org/detail/283311"
+    },
+    {
+      "name": "Combat Boots",
+      "file": "combat-boots.png",
+      "sourceUrl": "https://openclipart.org/detail/267782"
+    },
+    {
+      "name": "Lace-up Boots",
+      "file": "lace-up-boots.png",
+      "sourceUrl": "https://openclipart.org/detail/339338"
+    },
+    {
+      "name": "Low-top Sneakers",
+      "file": "low-top-sneakers.png",
+      "sourceUrl": "https://openclipart.org/detail/319669"
+    },
+    {
+      "name": "High-top Sneakers",
+      "file": "high-top-sneakers.png",
+      "sourceUrl": "https://openclipart.org/detail/297695"
+    },
+    {
+      "name": "Dress Shoes",
+      "file": "dress-shoes.png",
+      "sourceUrl": "https://openclipart.org/detail/215042"
+    },
+    {
+      "name": "Loafers",
+      "file": "loafers.png",
+      "sourceUrl": "https://openclipart.org/detail/315903"
+    },
+    {
+      "name": "Hiking Boots",
+      "file": "hiking-boots.png",
+      "sourceUrl": "https://openclipart.org/detail/182950"
+    },
+    {
+      "name": "Mary Jane Shoes",
+      "file": "mary-jane-shoes.png",
+      "sourceUrl": "https://openclipart.org/detail/353287"
+    },
+    {
+      "name": "Ballet Flats",
+      "file": "ballet-flats.png",
+      "sourceUrl": "https://openclipart.org/detail/353288"
+    },
+    {
+      "name": "Cowboy Boots",
+      "file": "cowboy-boots.png",
+      "sourceUrl": "https://openclipart.org/detail/333344"
+    },
+    {
+      "name": "Fedora Hat",
+      "file": "fedora-hat.png",
+      "sourceUrl": "https://openclipart.org/detail/181124"
+    },
+    {
+      "name": "Beanie",
+      "file": "beanie.png",
+      "sourceUrl": "https://openclipart.org/detail/234432"
+    },
+    {
+      "name": "Baseball Cap",
+      "file": "baseball-cap.png",
+      "sourceUrl": "https://openclipart.org/detail/302421"
+    },
+    {
+      "name": "Cowboy Hat",
+      "file": "cowboy-hat.png",
+      "sourceUrl": "https://openclipart.org/detail/333345"
+    },
+    {
+      "name": "Flat Cap",
+      "file": "flat-cap.png",
+      "sourceUrl": "https://openclipart.org/detail/208974"
+    },
+    {
+      "name": "Bucket Hat",
+      "file": "bucket-hat.png",
+      "sourceUrl": "https://openclipart.org/detail/302421"
+    },
+    {
+      "name": "Knit Pom-pom Beanie",
+      "file": "knit-pom-pom-beanie.png",
+      "sourceUrl": "https://openclipart.org/detail/234432"
+    },
+    {
+      "name": "Costume Police Cap",
+      "file": "costume-police-cap.png",
+      "sourceUrl": "https://openclipart.org/detail/171805"
+    },
+    {
+      "name": "Crown Headband",
+      "file": "crown-headband.png",
+      "sourceUrl": "https://openclipart.org/detail/232136"
+    },
+    {
+      "name": "Wide-brim Straw Hat",
+      "file": "wide-brim-straw-hat.png",
+      "sourceUrl": "https://openclipart.org/detail/181124"
+    },
+    {
+      "name": "Retro Camera Prop",
+      "file": "retro-camera-prop.png",
+      "sourceUrl": "https://openclipart.org/detail/323965"
+    },
+    {
+      "name": "Toy Walkie-Talkie",
+      "file": "toy-walkie-talkie.png",
+      "sourceUrl": "https://openclipart.org/detail/217147"
+    },
+    {
+      "name": "Foam Shield",
+      "file": "foam-shield.png",
+      "sourceUrl": "https://openclipart.org/detail/339018"
+    },
+    {
+      "name": "Wooden Walking Stick",
+      "file": "wooden-walking-stick.png",
+      "sourceUrl": "https://openclipart.org/detail/170899"
+    },
+    {
+      "name": "Vintage Book",
+      "file": "vintage-book.png",
+      "sourceUrl": "https://openclipart.org/detail/355399"
+    },
+    {
+      "name": "Plastic Badge",
+      "file": "plastic-badge.png",
+      "sourceUrl": "https://openclipart.org/detail/326749"
+    },
+    {
+      "name": "Cardboard Map",
+      "file": "cardboard-map.png",
+      "sourceUrl": "https://openclipart.org/detail/181224"
+    },
+    {
+      "name": "Toy Microphone",
+      "file": "toy-microphone.png",
+      "sourceUrl": "https://openclipart.org/detail/288684"
+    },
+    {
+      "name": "Traveler Backpack",
+      "file": "traveler-backpack.png",
+      "sourceUrl": "https://openclipart.org/detail/348211"
+    },
+    {
+      "name": "Briefcase",
+      "file": "briefcase.png",
+      "sourceUrl": "https://openclipart.org/detail/348239"
+    },
+    {
+      "name": "Toy Pistol",
+      "file": "toy-pistol.png",
+      "sourceUrl": "https://openclipart.org/detail/310806"
+    },
+    {
+      "name": "Foam Sword",
+      "file": "foam-sword.png",
+      "sourceUrl": "https://openclipart.org/detail/288547"
+    },
+    {
+      "name": "Plastic Dagger",
+      "file": "plastic-dagger.png",
+      "sourceUrl": "https://openclipart.org/detail/346758"
+    },
+    {
+      "name": "Foam Axe",
+      "file": "foam-axe.png",
+      "sourceUrl": "https://openclipart.org/detail/341539"
+    },
+    {
+      "name": "Toy Ray Gun",
+      "file": "toy-ray-gun.png",
+      "sourceUrl": "https://openclipart.org/detail/148495"
+    },
+    {
+      "name": "Wooden Training Staff",
+      "file": "wooden-training-staff.png",
+      "sourceUrl": "https://openclipart.org/detail/342629"
+    },
+    {
+      "name": "Toy Bow and Arrow Set",
+      "file": "toy-bow-and-arrow-set.png",
+      "sourceUrl": "https://openclipart.org/detail/281834"
+    },
+    {
+      "name": "Foam Nunchaku",
+      "file": "foam-nunchaku.png",
+      "sourceUrl": "https://openclipart.org/detail/300518"
+    },
+    {
+      "name": "Costume Knight Shield",
+      "file": "costume-knight-shield.png",
+      "sourceUrl": "https://openclipart.org/detail/191752"
+    },
+    {
+      "name": "Toy Laser Blaster",
+      "file": "toy-laser-blaster.png",
+      "sourceUrl": "https://openclipart.org/detail/148495"
+    }
+  ]
+}
